@@ -24,7 +24,7 @@ namespace Fluid.Core.Network.RakNet
         public const byte PacketShutdown = 0x7E;
         public const byte PacketEmergencyShutdown = 0x7F;
         
-        public static readonly byte[] PACKETS = new byte[]
+        public static readonly byte[] Packets = new byte[]
         {
             0x00, 0xFF, 0xFF, 0x00,
             0xFE, 0xFE, 0xFE, 0xFE,
