@@ -4,10 +4,12 @@
     <projectFile>FluidCore/FluidCore.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="ItemId's are now const">
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="oops">
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/ClientConnection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Item/ItemType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Item/ItemType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packets/Packet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packets/IPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketSender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketSender.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Session.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,15 +33,13 @@
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Server.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Item/ItemId.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Item/ItemId.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Network/RakNet/RakNet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/61F5185B-E9CF-48B9-8487-181D7861EB9C/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Network/RakNet/RakNet.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/FluidCore/Program.cs" />
-      <option value="$PROJECT_DIR$/FluidCore/Core/Server.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Entity/IPlayer.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Entity/IEntity.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/World/IWorld.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/ServerPlayer.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/Player.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/OfflinePlayer.cs" />
@@ -83,9 +83,14 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventories/PlayerInventory.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entities/Player.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Config/Config.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/RakNet/RakNet.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemType.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/RakNet/RakNet.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/IPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Session.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/ClientSession.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketSender.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/ClientConnection.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -143,7 +148,7 @@
       <workItem from="1622293386294" duration="2585000" />
       <workItem from="1622303853133" duration="2140000" />
       <workItem from="1622364846124" duration="2286000" />
-      <workItem from="1622379554031" duration="1177000" />
+      <workItem from="1622379554031" duration="1591000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -250,7 +255,28 @@
       <option name="project" value="LOCAL" />
       <updated>1622380157123</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="changed from UPPERCASE to lowercase, some names need to be fixed though">
+      <created>1622380838725</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1622380838725</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fixed hex formatting">
+      <created>1622380927456</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1622380927456</updated>
+    </task>
+    <task id="LOCAL-00018" summary="oops">
+      <created>1622380947341</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1622380947341</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +312,9 @@
     <MESSAGE value="..." />
     <MESSAGE value="fixed RakNet.cs" />
     <MESSAGE value="ItemId's are now const" />
-    <option name="LAST_COMMIT_MESSAGE" value="ItemId's are now const" />
+    <MESSAGE value="changed from UPPERCASE to lowercase, some names need to be fixed though" />
+    <MESSAGE value="fixed hex formatting" />
+    <MESSAGE value="oops" />
+    <option name="LAST_COMMIT_MESSAGE" value="oops" />
   </component>
 </project>

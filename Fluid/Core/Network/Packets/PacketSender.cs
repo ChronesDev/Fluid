@@ -9,13 +9,13 @@ namespace Fluid.Core
     /// Allows sending packets to other clients
     /// From NiclasOlofsson
     /// </summary>
-    public interface PacketSender
+    public static class PacketSender
     {
-        public void SendData(byte[] data, IPEndPoint targetEndPoint);
-        public Task SendDataAsync(byte[] data, IPEndPoint targetEndPoint);
-        public Task SendDataAsync(byte[] data, int length, IPEndPoint targetEndPoint);
-        public Task SendPacketAsync(Session session, Packet message);
-        public Task SendPacketAsync(Session session, List<Packet> message);
-        void Close(Session session);
+        public static void SendData(byte[] data, IPEndPoint targetEndPoint) { }
+        public static void SendDataAsync(byte[] data, IPEndPoint targetEndPoint) { }
+        public static void SendDataAsync(byte[] data, int length, IPEndPoint targetEndPoint) { }
+        public static void SendPacketAsync(ClientConnection connection, IPacket packet) { }
+        public static void SendPacketAsync(ClientConnection connection, List<IPacket> packets) { }
+        public static void CloseConnection(ClientConnection connection) { }
     }
 }
