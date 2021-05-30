@@ -8,6 +8,11 @@ namespace Fluid.Core
 {
     public class LoggerManager
     {
+        /// <summary>
+        /// Return the ConsoleColor to the given ColorCode
+        /// </summary>
+        /// <param name="colorCode">The ColorCode</param>
+        /// <returns>Returns ConsoleColor</returns>
         public static ConsoleColor GetConsoleColorByCode(string colorCode)
         {
             if(colorCode.Equals("§c"))
