@@ -16,12 +16,17 @@ namespace Fluid.Core
         /// </summary>
         /// <returns>Copy of this object</returns>
         public abstract Block Copy();
-        
+
+        /// <summary>
+        /// Stores the current Chunk
+        /// </summary>
+        public Chunk Chunk { get; private set; }
+
         /// <summary>
         /// Stores the current level
         /// </summary>
-        public Level Level { get; protected set; }
-        
+        public Level Level => Chunk.Level;
+
         // TODO: Fix X, Y, Z (they will be replaced with Local X, Y, Z)
         
         /// <summary>
@@ -53,7 +58,7 @@ namespace Fluid.Core
         /// The local X position of the block
         /// </summary>
         public long LocalX { get; private set; }
-        
+
         /// <summary>
         /// The local Y position of the block
         /// </summary>
@@ -75,11 +80,6 @@ namespace Fluid.Core
         public Vector3 LocalMiddlePosition => new Vector3(LocalX, LocalY, LocalZ) + new Vector3(0.5f);
 
         /// <summary>
-        /// Stores the current Chunk
-        /// </summary>
-        public Chunk Chunk { get; private set; }
-
-        /// <summary>
         /// Constructor of Block
         /// </summary>
         /// <param name="chunk">The chunk where the block is in</param>
@@ -89,10 +89,9 @@ namespace Fluid.Core
         protected Block(Chunk chunk, long x, long y, long z)
         {
             this.Chunk = chunk;
-            this.Level = chunk.Level;
         }
 
-        // TODO: Fix Move
+        // TODO: Finish Move
         
         /// <summary>
         /// Moves the block to the position and updates the changes
