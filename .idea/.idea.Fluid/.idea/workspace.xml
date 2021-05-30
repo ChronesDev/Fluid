@@ -4,17 +4,12 @@
     <projectFile>FluidCore/FluidCore.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="fixed packet and Raknet stuff">
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Level/Location.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Entity/Entities/OnlinePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Entity/Entities/OnlinePlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Entity/Entities/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Entity/Entities/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluid/Core/Entity/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Entity/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Entity/LivingEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Entity/LivingEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Inventory/Inventories/PlayerInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Inventory/Inventories/PlayerInventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Level/Format/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Level/Format/Level.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/ClientConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/ClientConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketSender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketSender.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Level/Format/Chunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Level/Format/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,17 +31,13 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/33/MathF.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Server.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/102/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/103/Vector3_Intrinsics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Item/ItemId.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Item/ItemId.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Network/RakNet/RakNet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/61F5185B-E9CF-48B9-8487-181D7861EB9C/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Network/RakNet/RakNet.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Fluid/Core/Entity/Player.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Entity/OfflinePlayer.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/OnlinePlayer.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Chat/Chat.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/IBlock.cs" />
@@ -89,13 +80,15 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/IPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketSender.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/ClientConnection.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Format/Level.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/LivingEntity.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entities/OnlinePlayer.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventories/PlayerInventory.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entities/Player.cs" />
       <option value="$PROJECT_DIR$/Fluid/Program.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Level/Format/Level.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entity.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Math/Vector2.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Level/Location.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -153,7 +146,8 @@
       <workItem from="1622293386294" duration="2585000" />
       <workItem from="1622303853133" duration="2140000" />
       <workItem from="1622364846124" duration="2286000" />
-      <workItem from="1622379554031" duration="2668000" />
+      <workItem from="1622379554031" duration="2779000" />
+      <workItem from="1622394396929" duration="2022000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -288,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622381381935</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="changed a few things">
+      <created>1622382385723</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1622382385723</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +329,7 @@
     <MESSAGE value="fixed hex formatting" />
     <MESSAGE value="oops" />
     <MESSAGE value="fixed packet and Raknet stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed packet and Raknet stuff" />
+    <MESSAGE value="changed a few things" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed a few things" />
   </component>
 </project>
