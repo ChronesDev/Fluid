@@ -15,10 +15,15 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="Core\Packet\**" />
+      <EmbeddedResource Remove="Core\Packet\**" />
+      <None Remove="Core\Packet\**" />
+    </ItemGroup>
+
+    <ItemGroup>
       <Folder Include="Core\Command\Commands" />
       <Folder Include="Core\Entity\Meta" />
       <Folder Include="Core\Item\Items" />
-      <Folder Include="Core\Packet" />
     </ItemGroup>
 
 </Project>
