@@ -48,10 +48,15 @@ namespace Fluid.Core
                 {
                     for (int z = 0; z < 16; z++)
                     {
-                        Blocks[x, y, z] = new Air();
+                        
                     }
                 }
             }
+        }
+
+        public void SetLocalBlock(long localX, long localY, long localZ)
+        {
+            
         }
     }
 }

@@ -22,6 +22,8 @@ namespace Fluid.Core
         /// </summary>
         public Level Level { get; protected set; }
         
+        // TODO: Fix X, Y, Z (they will be replaced with Local X, Y, Z)
+        
         /// <summary>
         /// The X position of the block
         /// </summary>
@@ -36,7 +38,7 @@ namespace Fluid.Core
         /// The Z position of the block
         /// </summary>
         public long Z { get; private set; }
-
+        
         /// <summary>
         /// Returns a vector to the block position
         /// </summary>
@@ -46,16 +48,52 @@ namespace Fluid.Core
         /// Returns a vector to the middle block position
         /// </summary>
         public Vector3 MiddlePosition => new Vector3(X, Y, Z) + new Vector3(0.5f);
+        
+        /// <summary>
+        /// The local X position of the block
+        /// </summary>
+        public long LocalX { get; private set; }
+        
+        /// <summary>
+        /// The local Y position of the block
+        /// </summary>
+        public long LocalY { get; private set; }
+        
+        /// <summary>
+        /// The local Z position of the block
+        /// </summary>
+        public long LocalZ { get; private set; }
+        
+        /// <summary>
+        /// Returns a vector to the block position
+        /// </summary>
+        public Vector3 LocalPosition => new(LocalX, LocalY, LocalZ);
+
+        /// <summary>
+        /// Returns a vector to the middle block position
+        /// </summary>
+        public Vector3 LocalMiddlePosition => new Vector3(LocalX, LocalY, LocalZ) + new Vector3(0.5f);
+
+        /// <summary>
+        /// Stores the current Chunk
+        /// </summary>
+        public Chunk Chunk { get; private set; }
 
         /// <summary>
         /// Constructor of Block
         /// </summary>
-        /// <param name="level">The level where the block is in</param>
-        protected Block(Level level)
+        /// <param name="chunk">The chunk where the block is in</param>
+        /// <param name="x">The X position of the block</param>
+        /// <param name="y">The Y position of the block</param>
+        /// <param name="z">The Z position of the block</param>
+        protected Block(Chunk chunk, long x, long y, long z)
         {
-            this.Level = level;
+            this.Chunk = chunk;
+            this.Level = chunk.Level;
         }
 
+        // TODO: Fix Move
+        
         /// <summary>
         /// Moves the block to the position and updates the changes
         /// </summary>
