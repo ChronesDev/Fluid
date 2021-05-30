@@ -44,6 +44,7 @@ namespace Fluid
                 s.Stop();
                 Console.WriteLine($"Elapsed time: {s.ElapsedMilliseconds}");
                 s.Reset();
+                Server.Start();
             }
             ev.Invoke(new());
         }
