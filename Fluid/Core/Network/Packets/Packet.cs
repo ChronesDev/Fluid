@@ -10,7 +10,7 @@ namespace Fluid.Core.Network.Packets
     {
         private ReadOnlyMemory<byte> _buffer;
 
-        protected MemoryStreamReader lol;
+        protected MemoryStreamReader lol
         public Packet(ReadOnlyMemory<byte> buffer)
         {
             _buffer = buffer;
