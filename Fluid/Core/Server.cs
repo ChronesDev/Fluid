@@ -105,42 +105,42 @@ namespace Fluid.Core
         /// </summary>
         /// <param name="name">The player name to search for</param>
         /// <returns>Returns the first found player or null if none was found</returns>
-        public static OnlinePlayer? GetOnlinePlayerByName(string name) => OnlinePlayers.Find(player => player.Name == name);
+        public static OnlinePlayer? GetOnlinePlayerByName(string name) => OnlinePlayers.Find(player => player.PlayerName == name);
         
         /// <summary>
         /// Finds a player that has the same name
         /// </summary>
         /// <param name="name">The player name to search for</param>
         /// <returns>Returns the first found player or null if none was found</returns>
-        public static OfflinePlayer? GetOfflinePlayerByName(string name) => OfflinePlayers.Find(player => player.Name == name);
+        public static OfflinePlayer? GetOfflinePlayerByName(string name) => OfflinePlayers.Find(player => player.PlayerName == name);
 
         /// <summary>
         /// Finds an OnlinePlayer that has the same name
         /// </summary>
         /// /// <param name="name">The player name to search for</param>
         /// <returns>Returns the first found OnlinePlayer or null if none was found</returns>
-        public static OnlinePlayer? GetPlayerByName(string name) => Players.Find(player => player.Name == name);
+        public static OnlinePlayer? GetPlayerByName(string name) => Players.Find(player => player.PlayerName == name);
         
         /// <summary>
         /// Finds a player that has the same name
         /// </summary>
         /// <param name="name">The player name to search for</param>
         /// <returns>Returns all found players</returns>
-        public static List<OnlinePlayer> GetAllOnlinePlayersByName(string name) => OnlinePlayers.FindAll(player => player.Name == name);
+        public static List<OnlinePlayer> GetAllOnlinePlayersByName(string name) => OnlinePlayers.FindAll(player => player.PlayerName == name);
         
         /// <summary>
         /// Finds a player that has the same name
         /// </summary>
         /// <param name="name">The player name to search for</param>
         /// <returns>Returns all found players</returns>
-        public static List<OfflinePlayer> GetAllOfflinePlayersByName(string name) => OfflinePlayers.FindAll(player => player.Name == name);
+        public static List<OfflinePlayer> GetAllOfflinePlayersByName(string name) => OfflinePlayers.FindAll(player => player.PlayerName == name);
 
         /// <summary>
         /// Finds an OnlinePlayer that has the same name
         /// </summary>
         /// /// <param name="name">The player name to search for</param>
         /// <returns>Returns all found OnlinePlayers</returns>
-        public static List<OnlinePlayer> GetAllPlayersByName(string name) => OnlinePlayers.FindAll(player => player.Name == name);
+        public static List<OnlinePlayer> GetAllPlayersByName(string name) => OnlinePlayers.FindAll(player => player.PlayerName == name);
 
         /// <summary>
         /// Finds a player that has the same name

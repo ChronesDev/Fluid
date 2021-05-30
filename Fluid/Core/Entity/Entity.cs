@@ -28,12 +28,12 @@ namespace Fluid.Core
         /// Determines the position of this entity
         /// </summary>
         public Vector3 Position { get; set; }
-        
+
         /// <summary>
         /// Calculates the current chunk of the Position property. There is no guarantee that this Chunk does contain the entity 
         /// </summary>
         /// <returns>The Chunk where the entity is in</returns>
-        public Chunk? CurrentChunk => Level.
+        public Chunk? CurrentChunk => Level.GetChunkFromChunkPosition(Position);
 
         /// <summary>
         /// Stores where the entity is currently, is being updated by the tick or teleport event
@@ -58,7 +58,7 @@ namespace Fluid.Core
         {
             Position = position;
             LerpPosition = position;
-            LerpChunk
+            LerpChunk = Level.GetChunkFromPosition(Position);
         }
     }
 }

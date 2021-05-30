@@ -1,6 +1,6 @@
 namespace Fluid.Core
 {
-    public class WorldChat
+    public class LevelChat
     {
         /// <summary>
         /// Sends a message to the Chat

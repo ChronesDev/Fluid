@@ -1,31 +1,51 @@
 using System;
+using System.Collections.Generic;
+using System.Numerics;
 
 namespace Fluid.Core
 {
     /// <summary>
     /// Represents a Minecraft Level
     /// </summary>
-    public class Level : IDisposable
+    public class Level
     {
         // Chat
         
         /// <summary>
-        /// This is the holder of the WorldChat where players can communicate inside of this world
+        /// This is the holder of the LevelChat where players can communicate inside of this world
         /// </summary>
-        public WorldChat chat = new();
+        public LevelChat Chat = new();
         
         // Random
         
         /// <summary>
         /// This value can generate random numbers
         /// </summary>
-        public static Random Random { get; set; } = new();
-        
-        public 
+        public Random Random { get; } = new();
 
-        public void Dispose()
+        /// <summary>
+        /// Stores the LevelGenerator that allows generating new chunks
+        /// </summary>
+        public ILevelGenerator LevelGenerator { get; protected set; } = new DefaultFlatWorldGenerator();
+
+        /// <summary>
+        /// Gets a chunk from the world position
+        /// </summary>
+        /// <param name="position">The position to search for</param>
+        /// <returns>Returns the chunk or null if the chunk hasn't been loaded yet</returns>
+        public Chunk? GetChunkFromPosition(Vector3 position)
         {
-            GC.SuppressFinalize(this);
+            return null;
+        }
+
+        /// <summary>
+        /// Gets a chunk from the chunk position
+        /// </summary>
+        /// <param name="chunkPosition">The chunk position to search for</param>
+        /// <returns>Returns the chunk or null if the chunk hasn't been loaded yet</returns>
+        public Chunk? GetChunkFromChunkPosition(Vector3 chunkPosition)
+        {
+            return null;
         }
     }
 }
