@@ -21,15 +21,15 @@ namespace Fluid.Core.Network.RakNet
         public const byte PacketRaw = 0x08;
         public const byte PacketBlockAddress = 0x09;
         public const byte PacketUnblockAddress = 0x10;
-        public const byte PacketShutdown = 0x7e;
-        public const byte PacketEmergencyShutdown = 0x7f;
+        public const byte PacketShutdown = 0x7E;
+        public const byte PacketEmergencyShutdown = 0x7F;
         
         public static readonly byte[] PACKETS = new byte[]
         {
-            (byte) 0x00, (byte) 0xff, (byte) 0xff, (byte) 0x00,
-            (byte) 0xfe, (byte) 0xfe, (byte) 0xfe, (byte) 0xfe,
-            (byte) 0xfd, (byte) 0xfd, (byte) 0xfd, (byte) 0xfd,
-            (byte) 0x12, (byte) 0x34, (byte) 0x56, (byte) 0x78
+            0x00, 0xFF, 0xFF, 0x00,
+            0xFE, 0xFE, 0xFE, 0xFE,
+            0xFD, 0xFD, 0xFD, 0xFD,
+            0x12, 0x34, 0x56, 0x78
         };
     }
 }
