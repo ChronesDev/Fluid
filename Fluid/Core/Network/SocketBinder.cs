@@ -3,29 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Fluid.Core.Network
 {
     public class SocketBinder
     {
-        public IPEndPoint EndPoint { get; private set; }
-
-        public SocketBinder(IPEndPoint endpoint)
-        {
-            EndPoint = endpoint;
-        }
+        int port;
+        string ip;
 
         /// <summary>
-        /// Creates the Endpoint for the Server
+        /// Starts hearing on ip and port
         /// </summary>
-        public bool CreateEndpoint()
+        public SocketBinder(string ip, int port)
         {
-            IPAddress IPAddress = Dns.Resolve("0.0.0.0").AddressList[0];
-            EndPoint = new IPEndPoint(IPAddress, 19132);
-            if(EndPoint == null)
+            this.port = port;
+            this.ip = ip;
+        }
+
+        public bool PortIsValid()
+        {
+            if (port < 1 || port > 65536)
             {
-                return false;
+                return false; ;
             }
             return true;
         }
