@@ -5,7 +5,7 @@ namespace Fluid.Core
     /// <summary>
     /// Represents a Minecraft World
     /// </summary>
-    public class World : IDisposable
+    public class Level : IDisposable
     {
         // Chat
         

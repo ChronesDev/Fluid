@@ -58,7 +58,7 @@ namespace Fluid.Core
         /// <summary>
         /// Stores the references of the current worlds
         /// </summary>
-        public static List<World> Worlds { get; private set; } = new();
+        public static List<Level> Worlds { get; private set; } = new();
         
         // Random
 

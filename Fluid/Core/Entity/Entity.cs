@@ -14,13 +14,13 @@ namespace Fluid.Core
         /// <summary>
         /// Stores a reference to the world
         /// </summary>
-        public World World { get; set; }
+        public Level World { get; set; }
 
         /// <summary>
         /// Constructor of Entity
         /// </summary>
         /// <param name="world">The world where the entity is in</param>
-        protected Entity(World world)
+        protected Entity(Level world)
         {
             this.World = world;
         }
