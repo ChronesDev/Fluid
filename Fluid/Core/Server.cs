@@ -76,7 +76,10 @@ namespace Fluid.Core
             ServerLogger.Info("Server started successfully!");
             Initialized = true;
         }
-
+        
+        /// <summary>
+        /// Server shutdown
+        /// </summary>
         public static void Shutdown()
         {
             if (!Initialized) return;
