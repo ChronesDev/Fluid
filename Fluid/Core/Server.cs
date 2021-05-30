@@ -79,7 +79,7 @@ namespace Fluid.Core
         
         /// <summary>
         /// Server shutdown
-        /// </summary
+        /// </summary>
         public static void Shutdown()
         {
             if (!Initialized) return;
