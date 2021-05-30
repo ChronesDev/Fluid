@@ -6,7 +6,7 @@ namespace Fluid.Core
     {
         private float _Health;
         private float _MaxHealth = 20f;
-
+        
         /// <summary>
         /// Stores the health value of the entity
         /// </summary>
@@ -26,6 +26,15 @@ namespace Fluid.Core
                 _MaxHealth = MathF.Max(0, value);
                 Health = MathF.Min(Health, _MaxHealth);
             }
+        }
+
+        /// <summary>
+        /// Constructor of LivingEntity
+        /// </summary>
+        /// <param name="level">The level where the entity is in</param>
+        protected LivingEntity(Level level) : base(level)
+        {
+            
         }
     }
 }

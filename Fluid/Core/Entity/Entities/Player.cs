@@ -7,12 +7,21 @@ namespace Fluid.Core
     {
         public override bool Is<T>() => typeof(T) == typeof(Player);
 
-        public int Gamemode { get; set; }
+        /// <summary>
+        /// Stores the original PlayerName
+        /// </summary>
+        public string PlayerName { get; protected set; } = String.Empty;
+        
+        /// <summary>
+        /// Stores the UUID of the player
+        /// </summary>
+        public Guid UUID { get; protected set; } = Guid.Empty;
 
-        public string Name { get; set; }
+        /// <summary>
+        /// Stores the player inventory
+        /// </summary>
+        public PlayerInventory Inventory { get; set; } = PlayerInventory.Empty;
 
-        public Guid UUID { get; set; }
 
-        public Inventory Inventory { get; set; }
     }
 }

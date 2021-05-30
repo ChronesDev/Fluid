@@ -3,7 +3,7 @@ using System;
 namespace Fluid.Core
 {
     /// <summary>
-    /// Represents a Minecraft World
+    /// Represents a Minecraft Level
     /// </summary>
     public class Level : IDisposable
     {
