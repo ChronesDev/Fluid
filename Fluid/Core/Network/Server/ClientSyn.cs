@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -21,7 +22,10 @@ namespace Fluid.Core.Network
 
         static byte[] AddressInBytes = { 0, 0, 0, 0 };
 
-
         IPAddress address = new IPAddress(AddressInBytes);
+
+        public Stream NetworkStream { get; set; }
+
+        public NetworkManager NetworkManager { get; set; }
     }
 }

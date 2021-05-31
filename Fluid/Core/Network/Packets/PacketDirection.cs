@@ -1,6 +1,6 @@
 using System;
 
-namespace Craft.Net
+namespace Fluid.Core
 {
     public enum PacketDirection
     {
