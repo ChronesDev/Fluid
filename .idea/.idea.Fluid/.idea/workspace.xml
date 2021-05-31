@@ -7,7 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Added IsSolid and IsTransparent" />
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +38,7 @@
     <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Network/SocketBinder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Network/SocketBinder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Blocks/Air.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Block.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -56,7 +60,6 @@
       <option value="$PROJECT_DIR$/Fluid/Core/World/Format/World.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Color/CC.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/EntityMeta.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventory.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Config/Config.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemType.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" />
@@ -83,12 +86,13 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Network/ClientConnection.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/UngeneratedChunk.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Core/IDestroyable.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/GeneratedChunk.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/ShinyTestBlock.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventory.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -148,7 +152,7 @@
       <workItem from="1622364846124" duration="2286000" />
       <workItem from="1622379554031" duration="2779000" />
       <workItem from="1622394396929" duration="4867000" />
-      <workItem from="1622449879705" duration="5985000" />
+      <workItem from="1622449879705" duration="7498000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -360,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622458259269</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary=".">
+      <created>1622460190890</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1622460190890</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +409,6 @@
     <MESSAGE value="fixed packet and Raknet stuff" />
     <MESSAGE value="changed a few things" />
     <MESSAGE value="updated the entity" />
-    <MESSAGE value="." />
     <MESSAGE value="added LevelGenerator and updated so much more stuff" />
     <MESSAGE value="Updated the Block class (will now use Local position instead of global position" />
     <MESSAGE value="Updated the Block class" />
@@ -407,6 +417,7 @@
     <MESSAGE value="Polished even more SocketBinder.cs" />
     <MESSAGE value="Updated the Block record, Chunk, Level and ect need to be implemented / fixed" />
     <MESSAGE value="Added IsSolid and IsTransparent" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added IsSolid and IsTransparent" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

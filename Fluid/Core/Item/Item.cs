@@ -2,11 +2,16 @@ using System;
 
 namespace Fluid.Core
 {
-    public abstract record Item : IDisposable
+    public abstract record Item
     {
-        public void Dispose()
-        {
-            GC.SuppressFinalize(this);
-        }
+        /// <summary>
+        /// Determines the maximum count that item can have
+        /// </summary>
+        public abstract int MaxCount { get; }
+
+        /// <summary>
+        /// Stores the item count
+        /// </summary>
+        public int Count { get; } = 1;
     }
 }

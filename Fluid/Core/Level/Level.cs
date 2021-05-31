@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Numerics;
+using System.Threading.Tasks;
 
 namespace Fluid.Core
 {
@@ -9,7 +10,10 @@ namespace Fluid.Core
     /// </summary>
     public class Level : IDestroyable
     {
-        // Chat
+        /// <summary>
+        /// Stores which Chunks will be loaded or generated later
+        /// </summary>
+        public Queue<ValueTuple<long, long>> ChunkLoaderQueue { get; protected set; } = new();
 
         /// <summary>
         /// This is the holder of the LevelChat where players can communicate inside of this world
