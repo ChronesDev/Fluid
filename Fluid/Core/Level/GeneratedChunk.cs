@@ -1,26 +1,26 @@
 namespace Fluid.Core
 {
     /// <summary>
-    /// Represents a Minecraft Chunk that hasn't been generated yet
+    /// Represents a Minecraft Chunk that has been generated
     /// </summary>
-    public class UngeneratedChunk : Chunk
+    public class GeneratedChunk : Chunk
     {
         /// <summary>
-        /// Returns a new Ungenerated Chunk
+        /// Returns a new Generated Chunk
         /// </summary>
         /// <param name="level"></param>
         /// <param name="chunkX"></param>
         /// <param name="chunkY"></param>
         /// <returns></returns>
-        public static UngeneratedChunk New(Level level, long chunkX, long chunkY) => new UngeneratedChunk(level, chunkX, chunkY);
+        public static GeneratedChunk New(Level level, long chunkX, long chunkY) => new GeneratedChunk(level, chunkX, chunkY);
 
         /// <summary>
-        /// Constructor of UngeneratedChunk
+        /// Constructor of GeneratedChunk
         /// </summary>
         /// <param name="level">The level where the chunk is in</param>
         /// <param name="chunkX">The X position of the chunk</param>
         /// <param name="chunkY">The Y position of the chunk</param>
-        public UngeneratedChunk(Level level, long chunkX, long chunkY) : base(level, chunkX, chunkY)
+        public GeneratedChunk(Level level, long chunkX, long chunkY) : base(level, chunkX, chunkY)
         {
             
         }
