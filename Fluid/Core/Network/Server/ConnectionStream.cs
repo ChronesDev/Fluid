@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
+using System.Numerics;
 using System.Security.Cryptography;
-using System.Text;
 using System.Threading;
+using Fluid.Core.Network;
 
-namespace Fluid.Core.Network
+namespace Fluid.Core
 {
     public class ConnectionStream
     {
@@ -95,17 +96,17 @@ namespace Fluid.Core.Network
         {
             lock (NetworkLock)
             {
-                if (Listener != null)
+                if (Listener is not null)
                 {
                     Listener.Stop();
                     Listener = null;
                 }
-                if (NetworkThread != null)
+                if (NetworkThread is not null)
                 {
                     NetworkThread.Abort();
                     NetworkThread = null;
                 }
-                if (EntityThread != null)
+                if (EntityThread is not null)
                 {
                     EntityThread.Abort();
                     EntityThread = null;

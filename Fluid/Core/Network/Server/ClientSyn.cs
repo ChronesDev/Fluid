@@ -1,21 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 using System.Net;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Fluid.Core.Network
+namespace Fluid.Core
 {
     public class ClientSyn
     {
-        public ClientSyn(TcpClient client)
-        {
-            this.NetworkClient = client;
-        }
-
         public TcpClient NetworkClient { get; set; }
 
         public short Ping { get; internal set; }
@@ -27,5 +17,10 @@ namespace Fluid.Core.Network
         public Stream NetworkStream { get; set; }
 
         public NetworkManager NetworkManager { get; set; }
+
+        public ClientSyn(TcpClient client)
+        {
+            this.NetworkClient = client;
+        }
     }
 }

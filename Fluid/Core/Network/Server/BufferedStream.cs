@@ -1,20 +1,12 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 
-namespace Fluid.Core.Network
+namespace Fluid.Core
 {
     /// <summary>
     /// Queues all writes until Stream.Flush() is called. This is different than System.IO.BufferedStream.
     /// </summary>
     public class BufferedStream : Stream
     {
-        public BufferedStream(Stream baseStream)
-        {
-            BaseStream = baseStream;
-            PendingStream = new MemoryStream(512);
-            WriteImmediately = false;
-        }
-
         public Stream BaseStream { get; set; }
         public MemoryStream PendingStream { get; set; }
 
@@ -22,6 +14,13 @@ namespace Fluid.Core.Network
         /// Used by PacketReader to insert the ID and length into the stream before the packet contents.
         /// </summary>
         internal bool WriteImmediately { get; set; }
+
+        public BufferedStream(Stream baseStream)
+        {
+            BaseStream = baseStream;
+            PendingStream = new MemoryStream(512);
+            WriteImmediately = false;
+        }
 
         public override bool CanRead { get { return BaseStream.CanRead; } }
 

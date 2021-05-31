@@ -1,6 +1,3 @@
-using Craft.Net;
-using Fluid.Core.Network;
-
 namespace Fluid.Core
 {
     /// <summary>

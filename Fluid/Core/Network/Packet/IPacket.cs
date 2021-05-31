@@ -1,5 +1,4 @@
-﻿using Craft.Net;
-using Fluid.Core.Network;
+﻿using Fluid.Core.Network;
 
 namespace Fluid.Core
 {

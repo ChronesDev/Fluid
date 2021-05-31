@@ -7,9 +7,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Fixed item names">
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="The 0.0.0.0 ip uses IPAddress.Parse">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Server.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packets/IPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/IPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/PacketDirection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/PacketReceiver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketSender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/PacketSender.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Server/Binder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Server/Binder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Server/BufferedStream.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Server/BufferedStream.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Server/ClientSyn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Server/ClientSyn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Server/ConnectionStream.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Server/ConnectionStream.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Fluid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Fluid.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,19 +47,13 @@
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Server.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/102/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Server.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Item/Item.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Network/SocketBinder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Blocks/Air.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Fluid/Core/World/World.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/World/Chunk.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Fluid.csproj" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/PacketReciever.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/PacketSender.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/PacketReceiver.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Event/EventArgs/CancelableEventArgs.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Items/Item.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Plugin/Plugin.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Plugin/PluginManager.cs" />
@@ -67,8 +69,6 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Network/RakNet/RakNet.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Session.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/ClientSession.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/IPacket.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketSender.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/LivingEntity.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entities/OnlinePlayer.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventories/PlayerInventory.cs" />
@@ -96,6 +96,15 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Stone.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Server.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Networking/NetworkManager.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketSender.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketReceiver.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/IPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketDirection.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Server/Binder.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Server/BufferedStream.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Server/ConnectionStream.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Server/ClientSyn.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -382,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622464402976</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="The 0.0.0.0 ip uses IPAddress.Parse">
+      <created>1622472184910</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1622472184910</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +420,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="polished the ChatColor names" />
     <MESSAGE value="restructured the Inventories folder" />
     <MESSAGE value="Added descriptions to all ChatColors" />
     <MESSAGE value="restructured some stuff, will be fixed and improved later" />
@@ -429,7 +444,8 @@
     <MESSAGE value="Added IsSolid and IsTransparent" />
     <MESSAGE value="." />
     <MESSAGE value="Fixed item names" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed item names" />
+    <MESSAGE value="The 0.0.0.0 ip uses IPAddress.Parse" />
+    <option name="LAST_COMMIT_MESSAGE" value="The 0.0.0.0 ip uses IPAddress.Parse" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
