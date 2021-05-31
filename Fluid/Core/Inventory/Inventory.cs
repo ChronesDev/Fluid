@@ -2,11 +2,8 @@
 
 namespace Fluid.Core
 {
-    public abstract record Inventory : IDisposable
+    public abstract record Inventory
     {
-        public void Dispose()
-        {
-            GC.SuppressFinalize(this);
-        }
+        
     }
 }

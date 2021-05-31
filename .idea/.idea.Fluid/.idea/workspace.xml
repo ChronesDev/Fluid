@@ -7,11 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Updated the Block record, Chunk, Level and ect need to be implemented / fixed">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" afterDir="false" />
-    </list>
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Added IsSolid and IsTransparent" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +34,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/61F5185B-E9CF-48B9-8487-181D7861EB9C/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Network/SocketBinder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Network/SocketBinder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Blocks/Air.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -151,7 +148,7 @@
       <workItem from="1622364846124" duration="2286000" />
       <workItem from="1622379554031" duration="2779000" />
       <workItem from="1622394396929" duration="4867000" />
-      <workItem from="1622449879705" duration="5909000" />
+      <workItem from="1622449879705" duration="5985000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -356,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622457859748</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Added IsSolid and IsTransparent">
+      <created>1622458259269</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1622458259269</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +382,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="first init" />
     <MESSAGE value="updated some stuff" />
     <MESSAGE value="polished the ChatColor names" />
     <MESSAGE value="restructured the Inventories folder" />
@@ -403,6 +406,7 @@
     <MESSAGE value="polished SocketBinder.cs" />
     <MESSAGE value="Polished even more SocketBinder.cs" />
     <MESSAGE value="Updated the Block record, Chunk, Level and ect need to be implemented / fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the Block record, Chunk, Level and ect need to be implemented / fixed" />
+    <MESSAGE value="Added IsSolid and IsTransparent" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added IsSolid and IsTransparent" />
   </component>
 </project>

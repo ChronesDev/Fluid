@@ -3,7 +3,7 @@ namespace Fluid.Core
     /// <summary>
     /// Represents a Minecraft chunk
     /// </summary>
-    public class Chunk : IDestroyable
+    public class Chunk
     {
         /// <summary>
         /// Returns true if the chunk has been generated
@@ -41,21 +41,6 @@ namespace Fluid.Core
         {
             this.Level = level;
             (this.ChunkX, this.ChunkY) = (chunkX, chunkY);
-        }
-        
-        /// <summary>
-        /// This method can be overwritten if needed
-        /// </summary>
-        protected virtual void OnDestroying() { }
-        
-        /// <summary>
-        /// Implements IDestroyable.Destroy
-        /// </summary>
-        public void Destroy()
-        {
-            OnDestroying();
-            Blocks = null!;
-            Level = null!;
         }
 
         /// <summary>
