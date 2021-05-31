@@ -7,10 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Finished adding all item ids">
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/AcaciaDoor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/AcaciaButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/AcaciaButton.cs" afterDir="false" />
-    </list>
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +32,7 @@
     <setting file="mock://C:/Users/thecr/RiderProjects/Fluid/Fluid/Core/Block/Blocks/Air.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/thecr/RiderProjects/Fluid/Fluid/Core/Item/ItemType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/thecr/RiderProjects/Fluid/Fluid/Core/Block/Blocks/AcaciaButton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/thecr/RiderProjects/Fluid/Fluid/Core/Block/Blocks/AcaciaButton.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -77,7 +75,6 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Core/IDestroyable.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/GeneratedChunk.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/ShinyTestBlock.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventory.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" />
@@ -88,8 +85,9 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Stone.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Dirt.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/AcaciaDoor.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/AcaciaButton.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/AcaciaDoor.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventory.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -397,7 +395,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622501694735</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Added AcaciaDoor and fixed AcaciaButton">
+      <created>1622502226206</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1622502226206</updated>
+    </task>
+    <task id="LOCAL-00037" summary="test">
+      <created>1622503739383</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1622503739383</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,8 +431,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="restructured some stuff, will be fixed and improved later" />
-    <MESSAGE value="added IDisposeable to a few objects and added ItemType / ItemId" />
     <MESSAGE value="fixed AllColorCodes" />
     <MESSAGE value="..." />
     <MESSAGE value="fixed RakNet.cs" />
@@ -444,7 +454,9 @@
     <MESSAGE value="Added some blocks and fixed ItemId.cs and added all blocks as items also backed up ItemId.cs incase of mistake" />
     <MESSAGE value="Added class for BlockIds and made each blocks class read from it" />
     <MESSAGE value="Finished adding all item ids" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished adding all item ids" />
+    <MESSAGE value="Added AcaciaDoor and fixed AcaciaButton" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
