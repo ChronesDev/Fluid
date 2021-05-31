@@ -23,7 +23,7 @@ namespace Fluid.Core.Network
         }
         
         /// <summary>
-        /// Checks wether the port in valid 
+        /// Checks whether the port in valid 
         /// </summary>
         public bool PortIsValid()
         {
