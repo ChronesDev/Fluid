@@ -19,6 +19,7 @@ namespace Fluid.Core
         
         /// <summary>
         /// Bans the IP address and the client can no longer join the server with this ip
+        /// IP BAN
         /// </summary>
         public void BanIP() { }
     }
