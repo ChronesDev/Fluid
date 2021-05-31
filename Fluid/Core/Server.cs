@@ -77,7 +77,7 @@ namespace Fluid.Core
             int port = 19132;
             string ip = "0.0.0.0";
             ServerLogger.Info($"Server starts opening Port {port} on {ip}.");
-            SocketBinder binder = new SocketBinder(ip, port);
+            Binder binder = new SocketBinder(ip, port);
             if(binder.PortIsValid())
             {
                 ServerLogger.Info("Server port: Okay.");
