@@ -8,11 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Fixed item names">
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Stone.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Server.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +28,20 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/103/Vector3_Intrinsics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/61F5185B-E9CF-48B9-8487-181D7861EB9C/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Network/SocketBinder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Blocks/Air.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Block.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/33/MathF.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Blocks/Air.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Item/Item.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Server.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/thecr/RiderProjects/Fluid/Fluid/Core/Inventory/Inventory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/thecr/RiderProjects/Fluid/Fluid/Core/Item/ItemType.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/102/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Item/Item.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Network/SocketBinder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Blocks/Air.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -72,7 +78,6 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Location.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entity.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Generator/LevelGenerator.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Server.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Generator/ILevelGenerator.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Generator/Generators/DefaultFlatWorldGenerator.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Chat/LevelChat.cs" />
@@ -90,6 +95,7 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Stone.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Server.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />

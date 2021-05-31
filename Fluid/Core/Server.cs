@@ -77,9 +77,8 @@ namespace Fluid.Core
             if (Initialized) return;
             int port = 19132;
             string ip = "0.0.0.0";
-            byte[] AddressInBytes = { 0, 0, 0, 0 };
             ServerLogger.Info($"Server starts opening Port {port} on {ip}.");
-            Binder binder = new Binder(new IPEndPoint(new IPAddress(AddressInBytes), port));
+            Binder binder = new Binder(new IPEndPoint(IPAddress.Parse(ip), port));
             if (binder.PortIsValid())
             {
                 ServerLogger.Info("Server port: Okay.");
