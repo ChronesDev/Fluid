@@ -16,7 +16,9 @@ namespace Fluid.Core
         
         public override bool IsTransparent { get; } = true;
         
-        public override float Hardness { get; } = 300f;
+        public override float Hardness { get; } = 0f;
+
+        public override int BlastResistance { get; } = 0;
 
         /// <summary>
         /// Constructor of the Air block (locally)

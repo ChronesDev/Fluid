@@ -68,6 +68,11 @@ namespace Fluid.Core
         /// Determines if the hardness of the block
         /// </summary>
         public abstract float Hardness { get; }
+        
+        /// <summary>
+        /// Determines if the hardness of the block
+        /// </summary>
+        public abstract int BlastResistance { get; }
 
         #endregion
         
