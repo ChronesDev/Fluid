@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -10,10 +11,28 @@ namespace Fluid.Core.Network
 {
     public class Binder
     {
-        public Binder()
+        public Binder(IPEndPoint endPoint)
         {
-            
+            this.EndPoint = endPoint;
         }
+
+        public void Start()
+        {
+            Listener = new TcpListener(EndPoint);
+
+            this.NetworkThread.Start();
+        }
+
+
+        /// <summary>
+        /// Listens on incoming TCP Connections
+        /// </summary>
+        public TcpListener Listener { get; set; }
+
+        /// <summary>
+        /// Stores the EndPoint
+        /// </summary>
+        public IPEndPoint EndPoint { get; set; }
 
         /// <summary>
         /// Stores the IP Address
@@ -24,6 +43,11 @@ namespace Fluid.Core.Network
         /// Stores the Port
         /// </summary>
         public int Port { get; private set; }
+
+        /// <summary>
+        /// Defines the Thread the Server is listening on
+        /// </summary>
+        protected Thread NetworkThread { get; set; }
 
         /// <summary>
         /// Starts hearing on ip and port

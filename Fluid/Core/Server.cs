@@ -3,6 +3,7 @@ using Fluid.Core.Network;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Net;
 
 namespace Fluid.Core
 {
@@ -76,9 +77,10 @@ namespace Fluid.Core
             if (Initialized) return;
             int port = 19132;
             string ip = "0.0.0.0";
+            byte[] ipByte = ip.Split(".");
             ServerLogger.Info($"Server starts opening Port {port} on {ip}.");
-            Binder binder = new SocketBinder(ip, port);
-            if(binder.PortIsValid())
+            Binder binder = new Binder(new IPEndPoint(new IPAddress(), port));
+            if (binder.PortIsValid())
             {
                 ServerLogger.Info("Server port: Okay.");
             }
