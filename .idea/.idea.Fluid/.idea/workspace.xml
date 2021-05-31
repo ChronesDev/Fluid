@@ -7,9 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment=".">
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="added itemcount">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Item/ItemType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Item/ItemType.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +31,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/33/MathF.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Blocks/Air.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Item/Item.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Server.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/102/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/103/Vector3_Intrinsics.cs" root0="SKIP_HIGHLIGHTING" />
@@ -56,12 +58,10 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Items/ItemType.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Math/Math.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Math/MathF.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/World/Format/World.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Color/CC.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/EntityMeta.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Config/Config.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemType.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/RakNet/RakNet.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Session.cs" />
@@ -93,6 +93,8 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventory.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemType.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -152,7 +154,7 @@
       <workItem from="1622364846124" duration="2286000" />
       <workItem from="1622379554031" duration="2779000" />
       <workItem from="1622394396929" duration="4867000" />
-      <workItem from="1622449879705" duration="7498000" />
+      <workItem from="1622449879705" duration="8271000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -371,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622460190890</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="added itemcount">
+      <created>1622461814811</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1622461814811</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +402,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="updated some stuff" />
     <MESSAGE value="polished the ChatColor names" />
     <MESSAGE value="restructured the Inventories folder" />
     <MESSAGE value="Added descriptions to all ChatColors" />
@@ -418,6 +426,7 @@
     <MESSAGE value="Updated the Block record, Chunk, Level and ect need to be implemented / fixed" />
     <MESSAGE value="Added IsSolid and IsTransparent" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="added itemcount" />
+    <option name="LAST_COMMIT_MESSAGE" value="added itemcount" />
   </component>
 </project>

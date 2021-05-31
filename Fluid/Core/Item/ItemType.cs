@@ -5,7 +5,7 @@ namespace Fluid.Core
     /// <summary>
     /// all minecraft item-ids
     /// </summary>
-    public enum Itemtype : uint
+    public enum ItemType : uint
     {
         //all block ids are here too
         Air = 0,
