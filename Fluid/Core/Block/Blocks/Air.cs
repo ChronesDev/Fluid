@@ -10,8 +10,13 @@ namespace Fluid.Core
         public override Block CopyTo(Level level, long x, long y, long z) => new Air(level, x, y, z);
         public override Block CopyToLocal(Chunk chunk, ushort localX, ushort localY, ushort localZ) => new Air(chunk, localX, localY, localZ);
 
+        public override string Name { get; } = "Air";
+        
         public override bool IsSolid { get; } = false;
+        
         public override bool IsTransparent { get; } = true;
+        
+        public override float Hardness { get; } = 300f;
 
         /// <summary>
         /// Constructor of the Air block (locally)
