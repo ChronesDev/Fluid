@@ -8,8 +8,13 @@ using System.Threading.Tasks;
 
 namespace Fluid.Core.Network
 {
-    public class SocketBinder
+    public class Binder
     {
+        public Binder()
+        {
+            
+        }
+
         /// <summary>
         /// Stores the IP Address
         /// </summary>
@@ -23,7 +28,7 @@ namespace Fluid.Core.Network
         /// <summary>
         /// Starts hearing on ip and port
         /// </summary>
-        public SocketBinder(IPAddress ipAddress, int port)
+        public Binder(IPAddress ipAddress, int port)
         {
             this.IPAddress = ipAddress;
             this.Port = port;
