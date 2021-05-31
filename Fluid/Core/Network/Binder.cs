@@ -20,6 +20,7 @@ namespace Fluid.Core.Network
         {
             Listener = new TcpListener(EndPoint);
             Listener.Start();
+            Listener.AcceptTcpClientAsync(AcceptClientAsync);
 
             this.NetworkThread.Start();
         }
