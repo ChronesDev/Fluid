@@ -77,9 +77,9 @@ namespace Fluid.Core
             if (Initialized) return;
             int port = 19132;
             string ip = "0.0.0.0";
-            byte[] ipByte = ip.Split(".");
+            byte[] AddressInBytes = { 0, 0, 0, 0 };
             ServerLogger.Info($"Server starts opening Port {port} on {ip}.");
-            Binder binder = new Binder(new IPEndPoint(new IPAddress(), port));
+            Binder binder = new Binder(new IPEndPoint(new IPAddress(AddressInBytes), port));
             if (binder.PortIsValid())
             {
                 ServerLogger.Info("Server port: Okay.");
@@ -89,6 +89,7 @@ namespace Fluid.Core
                 ServerLogger.Info("§cServer port is bigger than 65536 or smaller than 1!");
                 throw new ArgumentOutOfRangeException("Invalid port range");
             }
+            binder.Start();
             ServerLogger.Info("§aServer started successfully!");
             Initialized = true;
         }
