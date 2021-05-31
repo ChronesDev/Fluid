@@ -19,6 +19,7 @@ namespace Fluid.Core.Network
         public void Start()
         {
             Listener = new TcpListener(EndPoint);
+            Listener.Start();
 
             this.NetworkThread.Start();
         }
@@ -48,15 +49,6 @@ namespace Fluid.Core.Network
         /// Defines the Thread the Server is listening on
         /// </summary>
         protected Thread NetworkThread { get; set; }
-
-        /// <summary>
-        /// Starts hearing on ip and port
-        /// </summary>
-        public Binder(IPAddress ipAddress, int port)
-        {
-            this.IPAddress = ipAddress;
-            this.Port = port;
-        }
         
         /// <summary>
         /// Checks whether the port in valid 
