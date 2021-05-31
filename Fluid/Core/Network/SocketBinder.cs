@@ -21,7 +21,10 @@ namespace Fluid.Core.Network
             this.port = port;
             this.ip = ip;
         }
-
+        
+        /// <summary>
+        /// Checks wether the port in valid 
+        /// </summary>
         public bool PortIsValid()
         {
             if (port < 1 || port > 65536)
