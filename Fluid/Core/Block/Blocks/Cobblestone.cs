@@ -22,7 +22,7 @@ namespace Fluid.Core
 
         public override float BlastResistance { get; } = 6f;
 
-        public override int BlockID { get; } = ItemId.Cobblestone;
+        public override int BlockID { get; } = BlockId.Cobblestone;
 
         /// <summary>
         /// Constructor of the Cobblestone block (locally)

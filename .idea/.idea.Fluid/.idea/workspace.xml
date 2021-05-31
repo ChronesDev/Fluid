@@ -7,18 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Fixed item names">
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/AcaciaButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Cobblestone.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Dirt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Grass.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Item/ItemId Backup.cs" afterDir="false" />
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Added some blocks and fixed ItemId.cs and added all blocks as items also backed up ItemId.cs incase of mistake">
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Block/BlockId.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/AcaciaButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/AcaciaButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Cobblestone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Cobblestone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Dirt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Dirt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Grass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Grass.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Stone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Stone.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Item/ItemType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Item/ItemType.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +43,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Fluid/Core/World/World.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/World/Chunk.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Fluid.csproj" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/PacketReciever.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/PacketSender.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/PacketReceiver.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Event/EventArgs/CancelableEventArgs.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Items/Item.cs" />
@@ -94,9 +86,14 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Stone.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Block/BlockId.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/AcaciaButton.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Cobblestone.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Grass.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Stone.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Dirt.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -383,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622464402976</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Added some blocks and fixed ItemId.cs and added all blocks as items also backed up ItemId.cs incase of mistake">
+      <created>1622484629966</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1622484629966</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +409,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="polished the ChatColor names" />
     <MESSAGE value="restructured the Inventories folder" />
     <MESSAGE value="Added descriptions to all ChatColors" />
     <MESSAGE value="restructured some stuff, will be fixed and improved later" />
@@ -430,7 +433,8 @@
     <MESSAGE value="Added IsSolid and IsTransparent" />
     <MESSAGE value="." />
     <MESSAGE value="Fixed item names" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed item names" />
+    <MESSAGE value="Added some blocks and fixed ItemId.cs and added all blocks as items also backed up ItemId.cs incase of mistake" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some blocks and fixed ItemId.cs and added all blocks as items also backed up ItemId.cs incase of mistake" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
