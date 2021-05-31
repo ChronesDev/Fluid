@@ -1,5 +1,3 @@
-using System;
-
 namespace Fluid.Core
 {
     /// <summary>
@@ -48,7 +46,8 @@ namespace Fluid.Core
                 {
                     for (int z = 0; z < 16; z++)
                     {
-                        
+                        // TODO: Add x, y, z to chunk pos
+                        Blocks[x, y, z] = new Air(this, x, y, z);
                     }
                 }
             }

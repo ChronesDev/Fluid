@@ -7,10 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="added LevelGenerator and updated so much more stuff">
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/ShinyTestBlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/ShinyTestBlock.cs" afterDir="false" />
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Level/UngeneratedChunk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Fluid/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Fluid/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Fluid/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Fluid/v16/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,11 +38,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/103/Vector3_Intrinsics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/61F5185B-E9CF-48B9-8487-181D7861EB9C/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Blocks/Air.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Fluid/Core/Command/Command.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Event/EventPriority.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Event/EventArgs.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Event/Event.cs" />
@@ -82,16 +81,17 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Location.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entity.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Generator/LevelGenerator.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entities/Player.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Server.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Generator/ILevelGenerator.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Generator/Generators/DefaultFlatWorldGenerator.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Chat/LevelChat.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/ShinyTestBlock.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entities/Player.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Level/UngeneratedChunk.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -150,7 +150,8 @@
       <workItem from="1622303853133" duration="2140000" />
       <workItem from="1622364846124" duration="2286000" />
       <workItem from="1622379554031" duration="2779000" />
-      <workItem from="1622394396929" duration="4595000" />
+      <workItem from="1622394396929" duration="4867000" />
+      <workItem from="1622449879705" duration="870000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -313,7 +314,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622398325913</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Updated the Block class (will now use Local position instead of global position">
+      <created>1622399059677</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1622399059677</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Updated the Block class">
+      <created>1622399253502</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1622399253502</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,6 +371,8 @@
     <MESSAGE value="updated the entity" />
     <MESSAGE value="." />
     <MESSAGE value="added LevelGenerator and updated so much more stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="added LevelGenerator and updated so much more stuff" />
+    <MESSAGE value="Updated the Block class (will now use Local position instead of global position" />
+    <MESSAGE value="Updated the Block class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the Block class" />
   </component>
 </project>
