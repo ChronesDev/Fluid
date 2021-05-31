@@ -247,7 +247,7 @@ namespace Fluid.Core
         public const int UnderwaterTorch = 239;
         public const int ChorusPlant = 240;
         public const int StainedGlass = 241;
-        public const int Camera = 242;
+        public const int BlockCamera = 242;
         public const int Podzol = 243;
         public const int BeetrootCrops = 244;
         public const int Stonecutter = 245;
@@ -397,7 +397,7 @@ namespace Fluid.Core
         public const int HangingCoralFan = -135;
         public const int HangingCoralFan2 = -136;
         public const int HangingCoralFan3 = -137;
-        public const int Kelp = -138;
+        public const int BlockKelp = -138;
         public const int DriedKelpBlock = -139;
         public const int AcaciaButton = -140;
         public const int BirchButton = -141;
@@ -468,7 +468,7 @@ namespace Fluid.Core
         public const int Bell = -206;
         public const int SweetBerryBush = -207;
         public const int Lantern = -208;
-        public const int Campfire = -209;
+        public const int BlockCampfire = -209;
         public const int LavaCauldron = -210;
         public const int Jigsaw = -211;
         public const int Wood = -212;
@@ -497,14 +497,14 @@ namespace Fluid.Core
         public const int PolishedBasalt = -235;
         public const int SoulSoil = -236;
         public const int SoulFire = -237;
-        public const int NetherSprouts = -238;
+        public const int BlockNetherSprouts = -238;
         public const int Target = -239;
         public const int StrippedCrimsonStem = -240;
         public const int StrippedWarpedStem = -241;
         public const int CrimsonPlanks = -242;
         public const int WarpedPlanks = -243;
-        public const int CrimsonDoor = -244;
-        public const int WarpedDoor = -245;
+        public const int BlockCrimsonDoor = -244;
+        public const int BlockWarpedDoor = -245;
         public const int CrimsonTrapdoor = -246;
         public const int WarpedTrapdoor = -247;
         // -248 Unused
@@ -545,11 +545,11 @@ namespace Fluid.Core
         public const int BlackstoneDoubleSlab = -283;
         public const int PolishedBlackstoneBrickSlab = -284;
         public const int PolishedBlackstoneBrickDoubleSlab = -285;
-        public const int Chain = -286;
+        public const int BlockChain = -286;
         public const int TwistingVines = -287;
         public const int NetherGoldOre = -288;
         public const int CryingObsidian = -289;
-        public const int SoulCampfire = -290;
+        public const int BlockSoulCampfire = -290;
         public const int PolishedBlackstone = -291;
         public const int PolishedBlackstoneStairs = -292;
         public const int PolishedBlackstoneSlab = -293;
@@ -746,8 +746,8 @@ namespace Fluid.Core
         public const int Sign = 323;
         public const int WoodenDoor = 324;
         public const int Bucket = 325;
-        public const int WaterBucket = 326;
-        public const int LavaBucket = 327;
+        // 326 Unused
+        // 327 Unused
         public const int Minecart = 328;
         public const int Saddle = 329;
         public const int IronDoor = 330;
@@ -755,15 +755,15 @@ namespace Fluid.Core
         public const int Snowball = 332;
         public const int Boat = 333;
         public const int Leather = 334;
-        public const int MilkBucket = 335;
+        public const int Kelp = 335;
         public const int Brick = 336;
         public const int Clay = 337;
-        public const int Reeds = 338;
+        public const int SugarCane = 338;
         public const int Paper = 339;
         public const int Book = 340;
         public const int Slimeball = 341;
         public const int ChestMinecart = 342;
-        public const int FurnaceMinecart = 343;
+        // 343 Unused
         public const int Egg = 344;
         public const int Compass = 345;
         public const int FishingRod = 346;
@@ -814,7 +814,6 @@ namespace Fluid.Core
         public const int Carrot = 391;
         public const int Potato = 392;
         public const int BakedPotato = 393;
-        public const int BakedPotatoes = 393;
         public const int PoisonousPotato = 394;
         public const int EmptyMap = 395;
         public const int GoldenCarrot = 396;
@@ -846,7 +845,7 @@ namespace Fluid.Core
         public const int PrismarineCrystals = 422;
         public const int RawMutton = 423;
         public const int CookedMutton = 424;
-        public const int Banner = 425;
+        public const int ArmourStand = 425;
         public const int EndCrystal = 426;
         public const int SpruceDoor = 427;
         public const int BirchDoor = 428;
@@ -855,37 +854,107 @@ namespace Fluid.Core
         public const int DarkOakDoor = 431;
         public const int ChorusFruit = 432;
         public const int PoppedChorusFruit = 433;
-        public const int Beetroot = 434;
-        public const int BeetrootSeeds = 435;
-        public const int BeetrootSoup = 436;
+        public const int BannerPattern = 434;
+        // 435 Unused
+        // 436 Unused
         public const int DragonBreath = 437;
         public const int SplashPotion = 438;
-        public const int SpectralArrow = 439;
-        public const int TippedArrow = 440;
+        // 439 Unused
+        // 440 Unused
         public const int LingeringPotion = 441;
-        public const int Shield = 442;
-        public const int Elytra = 443;
-        public const int SpruceBoat = 444;
-        public const int BirchBoat = 445;
-        public const int JungleBoat = 446;
-        public const int AcaciaBoat = 447;
-        public const int DarkOakBoat = 448;
-        public const int TotemOfUndying = 449;
-        public const int ShulkerShell = 450;
+        public const int Sparkler = 442;
+        public const int CommandBlockMinecart = 443;
+        public const int Elytra = 444;
+        public const int ShulkerShell = 445;
+        public const int Banner = 446;
+        public const int Medicine = 447;
+        public const int Balloon = 448;
+        public const int SuperFertilizer = 449;
+        public const int Totem = 450;
+        public const int Bleach = 451;
         public const int IronNugget = 452;
-        public const int KnowledgeBook = 453;
-        public const int Record13 = 2256;
-        public const int RecordCat = 2257;
-        public const int RecordBlocks = 2258;
-        public const int RecordChirp = 2259;
-        public const int RecordFar = 2260;
-        public const int RecordMall = 2261;
-        public const int RecordMellohi = 2262;
-        public const int RecordStal = 2263;
-        public const int RecordStrad = 2264;
-        public const int RecordWard = 2265;
-        public const int Record11 = 2266;
-        public const int RecordWait = 2267;
+        public const int IceBomb = 453;
+        // 444 Unused
+        public const int Trident = 455;
+        // 446 Unused
+        public const int Beetroot = 457;
+        public const int BeetrootSeeds = 458;
+        public const int BeetrootSoup = 459;
+        public const int Salmon = 460;
+        public const int Clownfish = 461;
+        public const int Pufferfish = 462;
+        public const int CookedSalmon = 463;
+        public const int DriedKelp = 464;
+        public const int NautilusShell = 465;
+        public const int EnchantedApple = 466;
+        public const int HeartOfTheSea = 467;
+        public const int Scute = 468;
+        public const int TurtleShell = 469;
+        public const int PhantomMembrane = 470;
+        public const int Crossbow = 471;
+        public const int SpruceSign = 472;
+        public const int BirchSign = 473;
+        public const int JungleSign = 474;
+        public const int AcaciaSign = 475;
+        public const int DarkOakSign = 476;
+        public const int SweetBerries = 477;
+        
+        // 478 - 497 Unused
+        
+        public const int Camera = 498;
+        public const int Salt = 499;
+        public const int Disc13 = 500;
+        public const int DiscCat = 501;
+        public const int DiscBlocks = 502;
+        public const int DiscChirp = 503;
+        public const int DiscFar = 504;
+        public const int DiscMall = 505;
+        public const int DiscMellohi = 506;
+        public const int DiscStal = 507;
+        public const int DiscStrad = 508;
+        public const int DiscWard = 509;
+        public const int Disc11 = 510;
+        public const int DiscWait = 511;
+        // 512 Unused
+        public const int Shield = 513;
+
+        // 514 - 719 Unused
+        
+        public const int Campfire = 720;
+
+        // 721 - 733 Unused
+        
+        public const int SuspiciousStew = 734;
+        // 735 Unused
+        public const int Honeycomb = 736;
+        public const int HoneyBottle = 737;
+        // 738 Unused
+        // 739 Unused
+        // 740 Unused
+        public const int LodestoneCompass = 741;
+        public const int NetheriteIngot = 742;
+        public const int NetheriteSword = 743;
+        public const int NetheriteShovel = 744;
+        public const int NetheritePickaxe = 745;
+        public const int NetheriteAxe = 746;
+        public const int NetheriteHoe = 747;
+        public const int NetheriteHelmet = 748;
+        public const int NetheriteChestplate = 749;
+        public const int NetheriteLeggings = 750;
+        public const int NetheriteBoots = 751;
+        public const int NetheriteScrap = 752;
+        public const int CrimsonSign = 753;
+        public const int WarpedSign = 754;
+        public const int CrimsonDoor = 755;
+        public const int WarpedDoor = 756;
+        public const int WarpedFungusOnAStick = 757;
+        public const int Chain = 758;
+        public const int DiscPigstep = 759;
+        public const int NetherSprouts = 760;
+        
+        // 761 - 800 Unused
+
+        public const int SoulCampfire = 760;
         
         #endregion
     }

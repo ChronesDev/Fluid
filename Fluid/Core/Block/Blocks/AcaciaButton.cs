@@ -12,17 +12,17 @@ namespace Fluid.Core
 
         public override string Name { get; } = "AcaciaButton";
         
-        public override bool IsSolid { get; } = true;
+        public override bool IsSolid { get; } = false;
         
-        public override bool IsTransparent { get; } = false;
+        public override bool IsTransparent { get; } = true;
 
         public override bool IsFlammable { get; } = false;
 
-        public override float Hardness { get; } = 0.6f;
+        public override float Hardness { get; } = 0.5f;
 
-        public override float BlastResistance { get; } = 0.6f;
+        public override float BlastResistance { get; } = 0.5f;
 
-        public override int BlockID { get; } = ItemId.AcaciaButton;
+        public override int BlockID { get; } = BlockId.AcaciaButton;
 
         /// <summary>
         /// Constructor of the AcaciaButton block (locally)
