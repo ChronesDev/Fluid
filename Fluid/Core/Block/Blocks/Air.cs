@@ -15,10 +15,14 @@ namespace Fluid.Core
         public override bool IsSolid { get; } = false;
         
         public override bool IsTransparent { get; } = true;
-        
+
+        public override bool IsFlammable { get; } = false;
+
         public override float Hardness { get; } = 0f;
 
-        public override int BlastResistance { get; } = 0;
+        public override float BlastResistance { get; } = 0f;
+
+        public override int BlockID { get; } = ItemId.Air;
 
         /// <summary>
         /// Constructor of the Air block (locally)

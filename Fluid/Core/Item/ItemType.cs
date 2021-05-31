@@ -8,7 +8,7 @@ namespace Fluid.Core
         //all block ids are here too
         Air = 0,
         Stone = 1,
-        Grass = 2,
+        GrassBlock = 2,
         Dirt = 3,
         Cobblestone = 4,
         Planks = 5,

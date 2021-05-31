@@ -65,14 +65,25 @@ namespace Fluid.Core
         public abstract bool IsTransparent { get; }
         
         /// <summary>
-        /// Determines if the hardness of the block
+        /// Determines if the block is flammable.
+        /// </summary>
+        
+        public abstract bool IsFlammable { get; }
+        
+        /// <summary>
+        /// Determines the hardness of the block
         /// </summary>
         public abstract float Hardness { get; }
         
         /// <summary>
-        /// Determines if the hardness of the block
+        /// Determines the blast resistance of the block
         /// </summary>
-        public abstract int BlastResistance { get; }
+        public abstract float BlastResistance { get; }
+        
+        /// <summary>
+        /// Determines the ID of the block
+        /// </summary>
+        public abstract int BlockID { get; }
 
         #endregion
         
