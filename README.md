@@ -19,5 +19,3 @@ A: On every platform that supports dotnet: Windows, MacOs, Linux.
 Q: Why should I use this over other platforms like pocketmine?
 
 A: Because we are nothing like pocketmine and use completely different coding languages.
-
-(shh, test line)
