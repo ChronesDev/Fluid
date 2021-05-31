@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using BufferedStream = Fluid.Core.BufferedStream;
 using System.Collections.Generic;
@@ -186,7 +186,11 @@ namespace Fluid.Core
             return array;
         }
         #endregion
-
+            
+            
+        /// <summary>
+        /// Reads the Packets 
+        /// </summary>
         public IPacket ReadPacket(PacketDirection direction)
         {
             lock (streamLock)
@@ -216,7 +220,10 @@ namespace Fluid.Core
                 return packet;
             }
         }
-
+        
+        /// <summary>
+        /// Writes the Packets
+        /// </summary>
         public void WritePacket(IPacket packet, PacketDirection direction)
         {
             lock (streamLock)
