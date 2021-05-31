@@ -10,16 +10,23 @@ namespace Fluid.Core.Network
 {
     public class SocketBinder
     {
-        int port;
-        string ip;
+        /// <summary>
+        /// Stores the IP Address
+        /// </summary>
+        public IPAddress IPAddress { get; private set; }
+        
+        /// <summary>
+        /// Stores the Port
+        /// </summary>
+        public int Port { get; private set; }
 
         /// <summary>
         /// Starts hearing on ip and port
         /// </summary>
-        public SocketBinder(string ip, int port)
+        public SocketBinder(IPAddress ip, int port)
         {
-            this.port = port;
-            this.ip = ip;
+            this.IPAddress = ip;
+            this.Port = port;
         }
         
         /// <summary>

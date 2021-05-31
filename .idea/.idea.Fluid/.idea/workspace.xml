@@ -7,13 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Level/UngeneratedChunk.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Fluid/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Fluid/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Fluid/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Fluid/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" afterDir="false" />
-    </list>
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Added UngeneratedChunk.cs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +15,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -151,7 +144,7 @@
       <workItem from="1622364846124" duration="2286000" />
       <workItem from="1622379554031" duration="2779000" />
       <workItem from="1622394396929" duration="4867000" />
-      <workItem from="1622449879705" duration="870000" />
+      <workItem from="1622449879705" duration="1147000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -328,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622399253502</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added UngeneratedChunk.cs">
+      <created>1622453341708</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1622453341708</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,6 +373,7 @@
     <MESSAGE value="added LevelGenerator and updated so much more stuff" />
     <MESSAGE value="Updated the Block class (will now use Local position instead of global position" />
     <MESSAGE value="Updated the Block class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the Block class" />
+    <MESSAGE value="Added UngeneratedChunk.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added UngeneratedChunk.cs" />
   </component>
 </project>
