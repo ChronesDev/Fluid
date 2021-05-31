@@ -15,3 +15,7 @@ A: You can join our team and / or contribute to our github.
 Q: On which platforms can the server run?
 
 A: On every platform that supports dotnet: Windows, MacOs, Linux.
+
+Q: Why should I use this over other platforms like pocketmine
+
+A: Because we are nothing like pocketmine and use completely different coding lnaguages.
