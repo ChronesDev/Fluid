@@ -23,9 +23,9 @@ namespace Fluid.Core.Network
         /// <summary>
         /// Starts hearing on ip and port
         /// </summary>
-        public SocketBinder(IPAddress ip, int port)
+        public SocketBinder(IPAddress ipAddress, int port)
         {
-            this.IPAddress = ip;
+            this.IPAddress = ipAddress;
             this.Port = port;
         }
         
@@ -34,7 +34,7 @@ namespace Fluid.Core.Network
         /// </summary>
         public bool PortIsValid()
         {
-            if (port < 1 || port > 65536)
+            if (Port is < 1 or > 65536)
             {
                 return false; ;
             }
