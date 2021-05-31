@@ -7,16 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Polished even more SocketBinder.cs">
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Core/IDestroyable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Level/GeneratedChunk.cs" afterDir="false" />
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Updated the Block record, Chunk, Level and ect need to be implemented / fixed">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Level/UngeneratedChunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Level/UngeneratedChunk.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/ClientConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/ClientConnection.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +30,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/33/MathF.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Blocks/Air.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Server.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/102/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/103/Vector3_Intrinsics.cs" root0="SKIP_HIGHLIGHTING" />
@@ -91,12 +86,12 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Network/ClientConnection.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/UngeneratedChunk.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Core/IDestroyable.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/ShinyTestBlock.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/GeneratedChunk.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/ShinyTestBlock.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -156,7 +151,7 @@
       <workItem from="1622364846124" duration="2286000" />
       <workItem from="1622379554031" duration="2779000" />
       <workItem from="1622394396929" duration="4867000" />
-      <workItem from="1622449879705" duration="5337000" />
+      <workItem from="1622449879705" duration="5909000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -354,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622453686435</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Updated the Block record, Chunk, Level and ect need to be implemented / fixed">
+      <created>1622457859748</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1622457859748</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +378,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fixed Item.cs" />
     <MESSAGE value="first init" />
     <MESSAGE value="updated some stuff" />
     <MESSAGE value="polished the ChatColor names" />
@@ -401,6 +402,7 @@
     <MESSAGE value="Added UngeneratedChunk.cs" />
     <MESSAGE value="polished SocketBinder.cs" />
     <MESSAGE value="Polished even more SocketBinder.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Polished even more SocketBinder.cs" />
+    <MESSAGE value="Updated the Block record, Chunk, Level and ect need to be implemented / fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the Block record, Chunk, Level and ect need to be implemented / fixed" />
   </component>
 </project>

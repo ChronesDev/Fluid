@@ -52,7 +52,15 @@ namespace Fluid.Core
 
         #region OverrideablePorperties
 
+        /// <summary>
+        /// Determines if the block is solid
+        /// </summary>
+        public abstract bool IsSolid { get; }
         
+        /// <summary>
+        /// Determines if the block is transparent. Entities can see through the block if true.
+        /// </summary>
+        public abstract bool IsTransparent { get; }
 
         #endregion
         
