@@ -1,9 +1,7 @@
 ﻿using System;
 using System.IO;
-using BufferedStream = Fluid.Core.Network.BufferedStream;
+using BufferedStream = Fluid.Core.BufferedStream;
 using System.Collections.Generic;
-using Fluid.Core.Network;
-using Fluid.Core;
 
 namespace Fluid.Core
 {

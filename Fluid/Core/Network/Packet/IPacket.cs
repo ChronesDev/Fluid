@@ -1,6 +1,4 @@
-﻿using Fluid.Core.Network;
-
-namespace Fluid.Core
+﻿namespace Fluid.Core
 {
     public interface IPacket
     {
