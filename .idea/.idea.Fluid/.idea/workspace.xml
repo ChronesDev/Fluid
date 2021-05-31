@@ -7,7 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Fixed ItemType typo and added Type property in Item.cs" />
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,19 +28,17 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/33/MathF.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Blocks/Air.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Core/Server.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/102/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/103/Vector3_Intrinsics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/61F5185B-E9CF-48B9-8487-181D7861EB9C/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Network/SocketBinder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Network/SocketBinder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Blocks/Air.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Block.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/33/MathF.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Block/Blocks/Air.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Item/Item.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Server.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/102/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Item/Item.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Network/SocketBinder.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -55,10 +56,12 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Items/ItemType.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Math/Math.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Math/MathF.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/World/Format/World.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Color/CC.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/EntityMeta.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Config/Config.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemType.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/RakNet/RakNet.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Session.cs" />
@@ -90,8 +93,6 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventory.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemType.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -151,7 +152,7 @@
       <workItem from="1622364846124" duration="2286000" />
       <workItem from="1622379554031" duration="2779000" />
       <workItem from="1622394396929" duration="4867000" />
-      <workItem from="1622449879705" duration="8901000" />
+      <workItem from="1622449879705" duration="7498000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -370,21 +371,7 @@
       <option name="project" value="LOCAL" />
       <updated>1622460190890</updated>
     </task>
-    <task id="LOCAL-00032" summary="added itemcount">
-      <created>1622461814811</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1622461814811</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Fixed ItemType typo and added Type property in Item.cs">
-      <created>1622462510176</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1622462510176</updated>
-    </task>
-    <option name="localTasksCounter" value="34" />
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,6 +393,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="updated some stuff" />
+    <MESSAGE value="polished the ChatColor names" />
     <MESSAGE value="restructured the Inventories folder" />
     <MESSAGE value="Added descriptions to all ChatColors" />
     <MESSAGE value="restructured some stuff, will be fixed and improved later" />
@@ -429,8 +418,6 @@
     <MESSAGE value="Updated the Block record, Chunk, Level and ect need to be implemented / fixed" />
     <MESSAGE value="Added IsSolid and IsTransparent" />
     <MESSAGE value="." />
-    <MESSAGE value="added itemcount" />
-    <MESSAGE value="Fixed ItemType typo and added Type property in Item.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed ItemType typo and added Type property in Item.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
