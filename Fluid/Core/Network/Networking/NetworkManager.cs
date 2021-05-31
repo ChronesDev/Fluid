@@ -100,8 +100,9 @@ namespace Fluid.Core
             serverbound.Add(typeof(ClientSettingsPacket));
             serverbound.Add(typeof(ClientStatusPacket));
             serverbound.Add(typeof(PluginMessagePacket));
-
-            clientbound.Add(typeof(KeepAlivePacket)); // Clientbound
+           
+            // Clientbound
+            clientbound.Add(typeof(KeepAlivePacket)); 
             clientbound.Add(typeof(JoinGamePacket));
             clientbound.Add(typeof(ChatMessagePacket));
             clientbound.Add(typeof(TimeUpdatePacket));
