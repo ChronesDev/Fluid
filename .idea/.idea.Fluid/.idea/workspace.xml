@@ -7,10 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Added IDigable, IEatable, IPlaceable, ISwingable">
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Added Name property in Item.cs">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Color/CC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Color/CC.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/ServerManager/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/ServerManager/Main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Server.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +32,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/33/MathF.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Color/CC.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/103/Vector3_Intrinsics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/102/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -39,8 +42,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketSender.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketReceiver.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/IPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketDirection.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Server/Binder.cs" />
@@ -72,7 +73,6 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/HeldItemPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/UseBedPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/IPacket.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/ServerManager/Main.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/UseableItem.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/Useable.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IWeapon.cs" />
@@ -89,7 +89,10 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IPlaceable.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/ISwingable.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IUseable.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Server.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/ServerManager/Main.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Program.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -412,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622565316076</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Added Name property in Item.cs">
+      <created>1622566868713</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1622566868713</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +444,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fixed AllColorCodes" />
     <MESSAGE value="..." />
     <MESSAGE value="fixed RakNet.cs" />
     <MESSAGE value="ItemId's are now const" />
@@ -459,7 +468,8 @@
     <MESSAGE value="Updated Item.cs" />
     <MESSAGE value="added IUseable, ISwingable, all it's EventArgs and extended the Item class" />
     <MESSAGE value="Added IDigable, IEatable, IPlaceable, ISwingable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added IDigable, IEatable, IPlaceable, ISwingable" />
+    <MESSAGE value="Added Name property in Item.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Name property in Item.cs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

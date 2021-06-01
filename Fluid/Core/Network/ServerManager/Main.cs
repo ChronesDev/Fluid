@@ -20,6 +20,7 @@ namespace Fluid.Core
             this.PacketPool[id & 0xff] = pack;
         }
 
+        /*
         public void registerPackets()
         {
             PacketPool = new DataPack[256];
@@ -103,5 +104,6 @@ namespace Fluid.Core
         this.registerPacket(ProtocolInfo.UPDATE_BLOCK_PACKET, UpdateBlockPacket.class);
         this.registerPacket(ProtocolInfo.UPDATE_TRADE_PACKET, UpdateTradePacket.class);
     }
+    */
 }
 }

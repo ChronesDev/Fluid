@@ -78,7 +78,7 @@ namespace Fluid.Core
             string ip = "0.0.0.0";
             ServerLogger.Info($"Server starts opening Port {port.ToString()} on {ip}.");
             Main server = new Main();
-            server.Start(new IPEndPoint(IPAddress.Parse(ip), port));
+            //server.Start(new IPEndPoint(IPAddress.Parse(ip), port));
             ServerLogger.Info("Server started successfully!");
             Initialized = true;
         }

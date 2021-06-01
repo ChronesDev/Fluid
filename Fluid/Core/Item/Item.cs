@@ -22,6 +22,7 @@ namespace Fluid.Core
         protected int _Durability = 1;
         protected string? _DisplayName;
         protected bool _IsBroken;
+        private bool _IsUpdated = false;
         
         /// <summary>
         /// Determines the ItemType
@@ -46,7 +47,7 @@ namespace Fluid.Core
         /// <summary>
         /// Determines whether the item updated it's properties that can be seen by the client
         /// </summary>
-        public bool IsUpdated { get; protected set; } = true;
+        public bool IsUpdated => _IsUpdated;
 
         /// <summary>
         /// Determines the item count
@@ -84,12 +85,12 @@ namespace Fluid.Core
         /// <summary>
         /// Changes the IsUpdated property to true
         /// </summary>
-        public void Update() => IsUpdated = true;
+        public void Update() => _IsUpdated = true;
 
         /// <summary>
         /// Changes the IsUpdated property to false
         /// </summary>
-        public void HandleUpdate() => IsUpdated = false;
+        public void HandleUpdate() => _IsUpdated = false;
 
         /// <summary>
         /// Resets the durability to the maximum durability value
@@ -105,61 +106,19 @@ namespace Fluid.Core
         /// Sets IsBroken to true. The item will be deleted on the next inventory update.
         /// </summary>
         public void Break() => IsBroken = true;
-
-        /// <summary>
-        /// Checks if the other item is equal to this item
-        /// </summary>
-        /// <param name="other">The other item</param>
-        /// <returns>Returns true if both item are the same</returns>
+        
+        // Default Equals
         public virtual bool Equals(Item? other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
-            return _Count == other._Count && _Durability == other._Durability && _IsBroken == other._IsBroken && Type == other.Type && MaxCount == other.MaxCount && MaxDurability == other.MaxDurability;
+            return _Count == other._Count && _Durability == other._Durability && _DisplayName == other._DisplayName && _IsBroken == other._IsBroken && Type == other.Type && Name == other.Name && MaxCount == other.MaxCount && MaxDurability == other.MaxDurability;
         }
 
-        /// <summary>
-        /// Generates a unique hash code of this item
-        /// </summary>
-        /// <returns>Returns a unique hash code of this item</returns>
+        // Default GetHashCode
         public override int GetHashCode()
         {
-            return HashCode.Combine(_Count, _Durability, _IsBroken, (int) Type, MaxCount, MaxDurability);
-        }
-
-        // Ignore this, just a test
-        record Sword : Item, Item.ISwingable
-        {
-            public override bool Is<T>() => typeof(T) == typeof(Sword);
-            public override ItemType Type => ItemType.Bed;
-            public override string Name => "Sword";
-            public override int MaxCount => 1;
-            public override int MaxDurability => 100;
-            public void Swing(ItemSwingEventArgs e)
-            {
-                e.CustomDamage = 100;
-                e.ApplyDamageModifiers = false;
-            }
-        }
-        static void s()
-        {
-            Sword s = new Sword
-            {
-                Count = 1,
-            };
-            s.Count = 2;
-
-            
-            Item item = s with { DisplayName = $@"{CC.Aqua}I love C#" };
-            
-            // On Right Click
-            s.As<IUseable>()?.Use(Item.ItemUseEventArgs.Empty);
-            
-            // On Left Click
-            s.As<ISwingable>()?.Swing(Item.ItemSwingEventArgs.Empty);
-            
-            
-            
+            return HashCode.Combine(_Count, _Durability, _DisplayName, _IsBroken, (int) Type, Name, MaxCount, MaxDurability);
         }
     }
 }
