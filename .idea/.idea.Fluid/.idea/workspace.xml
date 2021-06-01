@@ -7,10 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="">
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Added IDigable, IEatable, IPlaceable, ISwingable">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Config/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Config/Config.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Fluid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Fluid.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Color/CC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Color/CC.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,62 +29,67 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/33/MathF.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/103/Vector3_Intrinsics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/102/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Server.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/406/ConcurrentQueue.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Event/EventArgs/CancelableEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/61F5185B-E9CF-48B9-8487-181D7861EB9C/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Fluid/Core/Event/EventArgs/CancelableEventArgs.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Items/Item.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Plugin/Plugin.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Plugin/PluginManager.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Item/Items/ItemType.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Math/Math.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Math/MathF.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/World/Format/World.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Color/CC.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Entity/EntityMeta.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemType.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/RakNet/RakNet.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Session.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/ClientSession.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/IPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketSender.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Entity/LivingEntity.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entities/OnlinePlayer.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventories/PlayerInventory.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Program.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Format/Level.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Math/Vector2.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Location.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketReceiver.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/IPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketDirection.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Server/Binder.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Server/BufferedStream.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Server/ConnectionStream.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Server/ClientSyn.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/PacketDirection.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/AllPacketTypesComeHere.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/UnknownPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/HandshakePacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/StatusRequestPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/StatusResponse.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/StatusPing.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginDisconnectPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/EncryptionKeyRequestPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginSuccessPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginStartPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/EncryptionKeyResponsePacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/KeepAlivePacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/UseBedPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/JoinGamePacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/TimeUpdatePacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/SpawnPositionPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/UpdateHealthPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerPositionPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerLookPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerPositionAndLookPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/HeldItemPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/UseBedPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/IPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/ServerManager/Main.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/UseableItem.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/Useable.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IWeapon.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IAttackable.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entity.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Generator/LevelGenerator.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Server.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Generator/ILevelGenerator.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Generator/Generators/DefaultFlatWorldGenerator.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Chat/LevelChat.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entities/Player.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/SocketBinder.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/ClientConnection.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/UngeneratedChunk.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Core/IDestroyable.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/GeneratedChunk.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/ShinyTestBlock.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Chunk.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Level.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Block.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/BlockId.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Cobblestone.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Grass.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Stone.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Dirt.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/AcaciaButton.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/AcaciaDoor.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventory.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Config/Config.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Event/EventArgs.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Event/EventArgs/Item/ItemSwingEventArgs.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Event/EventArgs/CancelableEventArgs.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Event/EventArgs/Item/ItemUseEventArgs.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/Food.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IEatable.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IDigable.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Color/CC.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IPlaceable.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/ISwingable.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IUseable.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -103,7 +108,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="ReSpellerSettingsId" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -146,7 +151,7 @@
       <workItem from="1622379554031" duration="2779000" />
       <workItem from="1622394396929" duration="4867000" />
       <workItem from="1622449879705" duration="7498000" />
-      <workItem from="1622504807416" duration="1094000" />
+      <workItem from="1622549530233" duration="2148000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -372,49 +377,42 @@
       <option name="project" value="LOCAL" />
       <updated>1622464402976</updated>
     </task>
-    <task id="LOCAL-00033" summary="Added some blocks and fixed ItemId.cs and added all blocks as items also backed up ItemId.cs incase of mistake">
-      <created>1622484629966</created>
+    <task id="LOCAL-00033" summary="The 0.0.0.0 ip uses IPAddress.Parse">
+      <created>1622472184910</created>
       <option name="number" value="00033" />
       <option name="presentableId" value="LOCAL-00033" />
       <option name="project" value="LOCAL" />
-      <updated>1622484629966</updated>
+      <updated>1622472184910</updated>
     </task>
-    <task id="LOCAL-00034" summary="Added class for BlockIds and made each blocks class read from it">
-      <created>1622499083037</created>
+    <task id="LOCAL-00034" summary="moved many Packet Types to the Core/Network/Packet/Packets directory">
+      <created>1622549692619</created>
       <option name="number" value="00034" />
       <option name="presentableId" value="LOCAL-00034" />
       <option name="project" value="LOCAL" />
-      <updated>1622499083037</updated>
+      <updated>1622549692619</updated>
     </task>
-    <task id="LOCAL-00035" summary="Finished adding all item ids">
-      <created>1622501694735</created>
+    <task id="LOCAL-00035" summary="Updated Item.cs">
+      <created>1622557114264</created>
       <option name="number" value="00035" />
       <option name="presentableId" value="LOCAL-00035" />
       <option name="project" value="LOCAL" />
-      <updated>1622501694735</updated>
+      <updated>1622557114264</updated>
     </task>
-    <task id="LOCAL-00036" summary="Added AcaciaDoor and fixed AcaciaButton">
-      <created>1622502226206</created>
+    <task id="LOCAL-00036" summary="added IUseable, ISwingable, all it's EventArgs and extended the Item class">
+      <created>1622564804141</created>
       <option name="number" value="00036" />
       <option name="presentableId" value="LOCAL-00036" />
       <option name="project" value="LOCAL" />
-      <updated>1622502226206</updated>
+      <updated>1622564804141</updated>
     </task>
-    <task id="LOCAL-00037" summary="test">
-      <created>1622503739383</created>
+    <task id="LOCAL-00037" summary="Added IDigable, IEatable, IPlaceable, ISwingable">
+      <created>1622565316076</created>
       <option name="number" value="00037" />
       <option name="presentableId" value="LOCAL-00037" />
       <option name="project" value="LOCAL" />
-      <updated>1622503739383</updated>
+      <updated>1622565316076</updated>
     </task>
-    <task id="LOCAL-00038" summary="Push for Silas and his Config.cs">
-      <created>1622504159709</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1622504159709</updated>
-    </task>
-    <option name="localTasksCounter" value="39" />
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,6 +434,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="fixed AllColorCodes" />
     <MESSAGE value="..." />
     <MESSAGE value="fixed RakNet.cs" />
     <MESSAGE value="ItemId's are now const" />
@@ -455,13 +454,12 @@
     <MESSAGE value="Added IsSolid and IsTransparent" />
     <MESSAGE value="." />
     <MESSAGE value="Fixed item names" />
-    <MESSAGE value="Added some blocks and fixed ItemId.cs and added all blocks as items also backed up ItemId.cs incase of mistake" />
-    <MESSAGE value="Added class for BlockIds and made each blocks class read from it" />
-    <MESSAGE value="Finished adding all item ids" />
-    <MESSAGE value="Added AcaciaDoor and fixed AcaciaButton" />
-    <MESSAGE value="test" />
-    <MESSAGE value="Push for Silas and his Config.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Push for Silas and his Config.cs" />
+    <MESSAGE value="The 0.0.0.0 ip uses IPAddress.Parse" />
+    <MESSAGE value="moved many Packet Types to the Core/Network/Packet/Packets directory" />
+    <MESSAGE value="Updated Item.cs" />
+    <MESSAGE value="added IUseable, ISwingable, all it's EventArgs and extended the Item class" />
+    <MESSAGE value="Added IDigable, IEatable, IPlaceable, ISwingable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added IDigable, IEatable, IPlaceable, ISwingable" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

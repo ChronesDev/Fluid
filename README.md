@@ -1,3 +1,8 @@
+[![Download the Server](https://img.shields.io/badge/download-client-brightgreen?style=for-the-badge "Download")](https://cdn.discordapp.com/attachments/680855660774162598/681568116714897460 "Download")
+![Total Downloads](https://img.shields.io/github/downloads/ChronesDev/Fluid/total?style=for-the-badge)
+[![Code Issues](https://img.shields.io/github/issues/ChronesDev/Fluid?color=red&label=Code%20Issues&style=for-the-badge)](https://google.com)
+![Last Commit](https://img.shields.io/github/last-commit/ChronesDev/Fluid?style=for-the-badge)
+
 # Project Fluid 
 
 Q: What is Project Fluid?
@@ -19,3 +24,7 @@ A: On every platform that supports dotnet: Windows, MacOs, Linux.
 Q: Why should I use this over other platforms like pocketmine?
 
 A: Because we are nothing like pocketmine and use completely different coding languages.
+
+Q: How do I use this?
+
+A: You cannot use it yet for server hosting.

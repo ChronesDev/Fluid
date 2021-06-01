@@ -106,6 +106,9 @@ namespace Fluid.Core
         /// </summary>
         public static string Reset = "§r";
 
+        /// <summary>
+        /// Stores all ColorCodes in an array
+        /// </summary>
         public static readonly string[] AllColorCodes = new[]
         {
             Red,

@@ -6,5 +6,10 @@ namespace Fluid.Core
     public class CancelableEventArgs : EventArgs
     {
         public bool Cancel { get; set; }
+        
+        /// <summary>
+        /// Returns a new empty CancelableEventArgs class
+        /// </summary>
+        public new static CancelableEventArgs Empty => new CancelableEventArgs();
     }
 }

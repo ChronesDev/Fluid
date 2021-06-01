@@ -23,5 +23,8 @@ namespace Fluid.Core
         public PlayerInventory Inventory { get; set; } = PlayerInventory.Empty;
 
 
+        protected Player(Level level) : base(level)
+        {
+        }
     }
 }

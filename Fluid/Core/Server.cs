@@ -1,5 +1,4 @@
 using Fluid.Core.Logger;
-using Fluid.Core.Network;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -75,21 +74,12 @@ namespace Fluid.Core
         public static void Start()
         {
             if (Initialized) return;
-            int port = 19132;
+            int port = 11111;
             string ip = "0.0.0.0";
-            ServerLogger.Info($"Server starts opening Port {port} on {ip}.");
-            Binder binder = new Binder(new IPEndPoint(IPAddress.Parse(ip), port));
-            if (binder.PortIsValid())
-            {
-                ServerLogger.Info("Server port: Okay.");
-            }
-            else
-            {
-                ServerLogger.Info("§cServer port is bigger than 65536 or smaller than 1!");
-                throw new ArgumentOutOfRangeException("Invalid port range");
-            }
-            binder.Start();
-            ServerLogger.Info("§aServer started successfully!");
+            ServerLogger.Info($"Server starts opening Port {port.ToString()} on {ip}.");
+            Main server = new Main();
+            //server.Start(new IPEndPoint(IPAddress.Parse(ip), port));
+            ServerLogger.Info("Server started successfully!");
             Initialized = true;
         }
         
