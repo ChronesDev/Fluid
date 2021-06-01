@@ -89,11 +89,6 @@ namespace Fluid.Core
                     NetworkThread.Abort();
                     NetworkThread = null;
                 }
-                if (EntityThread != null)
-                {
-                    EntityThread.Abort();
-                    EntityThread = null;
-                }
             }
         }
 
