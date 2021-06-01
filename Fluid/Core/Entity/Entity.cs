@@ -33,7 +33,7 @@ namespace Fluid.Core
         /// Calculates the current chunk of the Position property. There is no guarantee that this Chunk does contain the entity 
         /// </summary>
         /// <returns>The Chunk where the entity is in</returns>
-        public Chunk? CurrentChunk => Level.GetChunkFromChunkPosition(Position);
+        public Chunk? CurrentChunk => Level.GetChunkFromPosition(Position);
 
         /// <summary>
         /// Stores where the entity is currently, is being updated by the tick or teleport event

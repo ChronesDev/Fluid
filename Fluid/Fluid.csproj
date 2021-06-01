@@ -15,8 +15,17 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="Core\Network\Networking\**" />
+      <Compile Remove="Core\Network\Packet\**" />
+      <Compile Remove="Core\Network\Server\**" />
       <Compile Remove="Core\Packet\**" />
+      <EmbeddedResource Remove="Core\Network\Networking\**" />
+      <EmbeddedResource Remove="Core\Network\Packet\**" />
+      <EmbeddedResource Remove="Core\Network\Server\**" />
       <EmbeddedResource Remove="Core\Packet\**" />
+      <None Remove="Core\Network\Networking\**" />
+      <None Remove="Core\Network\Packet\**" />
+      <None Remove="Core\Network\Server\**" />
       <None Remove="Core\Packet\**" />
     </ItemGroup>
 
@@ -24,11 +33,16 @@
       <Folder Include="Core\Command\Commands" />
       <Folder Include="Core\Entity\Meta" />
       <Folder Include="Core\Item\Items" />
-      <Folder Include="Core\Network\Packet\Packets" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="BouncyCastle.Crypto">
+        <HintPath>C:\Users\alter\Downloads\BouncyCastle.Crypto.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>
