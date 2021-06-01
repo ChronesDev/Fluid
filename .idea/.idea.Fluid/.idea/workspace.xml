@@ -8,7 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Console/ConsoleCommands.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +29,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Server.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/thecr/RiderProjects/Fluid/Fluid/Core/Config/Config.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -83,8 +81,8 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/AcaciaButton.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/AcaciaDoor.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventory.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Config/Config.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Console/ConsoleCommands.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Config/Config.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -146,7 +144,8 @@
       <workItem from="1622379554031" duration="2779000" />
       <workItem from="1622394396929" duration="4867000" />
       <workItem from="1622449879705" duration="7498000" />
-      <workItem from="1622504807416" duration="4130000" />
+      <workItem from="1622504807416" duration="4249000" />
+      <workItem from="1622542930438" duration="1015000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -421,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622507684944</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Start of config commands from console">
+      <created>1622510847469</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1622510847469</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +449,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fixed RakNet.cs" />
     <MESSAGE value="ItemId's are now const" />
     <MESSAGE value="changed from UPPERCASE to lowercase, some names need to be fixed though" />
     <MESSAGE value="fixed hex formatting" />
@@ -468,7 +473,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="Push for Silas and his Config.cs" />
     <MESSAGE value="Config saving, reading, and editing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Config saving, reading, and editing" />
+    <MESSAGE value="Start of config commands from console" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start of config commands from console" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
