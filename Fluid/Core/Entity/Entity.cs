@@ -1,6 +1,3 @@
-using System;
-using System.Numerics;
-
 namespace Fluid.Core
 {
     public abstract class Entity
@@ -34,6 +31,7 @@ namespace Fluid.Core
         /// </summary>
         /// <returns>The Chunk where the entity is in</returns>
         public Chunk? CurrentChunk => Level.GetChunkFromPosition(Position);
+        public Chunk? CurrentChunk => Level.FindChunkFromPosition(Position);
 
         /// <summary>
         /// Stores where the entity is currently, is being updated by the tick or teleport event
