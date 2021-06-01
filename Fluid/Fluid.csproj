@@ -29,7 +29,7 @@
     <ItemGroup>
       <Folder Include="Core\Command\Commands" />
       <Folder Include="Core\Entity\Meta" />
-      <Folder Include="Core\Item\Items" />
+      <Folder Include="Core\Item\Item\Items" />
     </ItemGroup>
 
     <ItemGroup>

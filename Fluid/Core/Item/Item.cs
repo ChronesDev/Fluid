@@ -1,7 +1,23 @@
+using System;
+
 namespace Fluid.Core
 {
-    public abstract record Item
+    public abstract partial record Item
     {
+        /// <summary>
+        /// Checks if the other type is the same type of the inheritor
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns>The result</returns>
+        public abstract bool Is<T>();
+
+        /// <summary>
+        /// Casts this object to T
+        /// </summary>
+        /// <typeparam name="T">The type to cast to</typeparam>
+        /// <returns>Returns the casted type of this object</returns>
+        public T? As<T>() where T : class => this as T;
+        
         protected int _Count = 1;
         protected int _Durability = 1;
         protected bool _IsBroken = false;
@@ -22,9 +38,9 @@ namespace Fluid.Core
         public abstract int MaxDurability { get; }
 
         /// <summary>
-        /// Determines whether the item updated it's properties
+        /// Determines whether the item updated it's properties that can be seen by the client
         /// </summary>
-        public bool Updated { get; protected set; } = true;
+        public bool IsUpdated { get; protected set; } = true;
 
         /// <summary>
         /// Determines the item count
@@ -54,14 +70,14 @@ namespace Fluid.Core
         }
 
         /// <summary>
-        /// Changes the Updated property to true
+        /// Changes the IsUpdated property to true
         /// </summary>
-        public void Update() => Updated = true;
+        public void Update() => IsUpdated = true;
 
         /// <summary>
-        /// Changes the Updated property to false
+        /// Changes the IsUpdated property to false
         /// </summary>
-        public void HandleUpdate() => Updated = false;
+        public void HandleUpdate() => IsUpdated = false;
 
         /// <summary>
         /// Resets the durability to the maximum durability value
@@ -78,18 +94,54 @@ namespace Fluid.Core
         /// </summary>
         public void Break() => IsBroken = true;
 
-        
-        // Ignore this, just a test
-        record Sword : Item
+        /// <summary>
+        /// Checks if the other item is equal to this item
+        /// </summary>
+        /// <param name="other">The other item</param>
+        /// <returns>Returns true if both item are the same</returns>
+        public virtual bool Equals(Item? other)
         {
+            if (ReferenceEquals(null, other)) return false;
+            if (ReferenceEquals(this, other)) return true;
+            return _Count == other._Count && _Durability == other._Durability && _IsBroken == other._IsBroken && Type == other.Type && MaxCount == other.MaxCount && MaxDurability == other.MaxDurability;
+        }
+
+        /// <summary>
+        /// Generates a unique hash code of this item
+        /// </summary>
+        /// <returns>Returns a unique hash code of this item</returns>
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(_Count, _Durability, _IsBroken, (int) Type, MaxCount, MaxDurability);
+        }
+
+        // Ignore this, just a test
+        record Sword : Item, Item.ISwingable
+        {
+            public override bool Is<T>() => typeof(T) == typeof(Sword);
             public override ItemType Type => ItemType.Bed;
             public override int MaxCount => 1;
             public override int MaxDurability => 100;
+            public void Swing(ItemSwingEventArgs e)
+            {
+                e.CustomDamage = 100;
+                e.ApplyDamageModifiers = false;
+            }
         }
         static void s()
         {
-            Sword s = new Sword();
+            Sword s = new Sword
+            {
+                Count = 1,
+            };
             s.Count = 2;
+
+            Item item = s;
+
+            if (s is IUseable)
+            {
+                s.As<IUseable>()?.Use(Item.ItemUseEventArgs.Empty);
+            }
         }
     }
 }

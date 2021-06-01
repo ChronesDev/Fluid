@@ -14,7 +14,7 @@ namespace Fluid.Core
         /// </summary>
         /// <typeparam name="T">The type to cast to</typeparam>
         /// <returns>Returns the casted type of this object</returns>
-        public T? As<T>() where T : Entity => this as T;
+        public T? As<T>() where T : class => this as T;
 
         /// <summary>
         /// Stores a reference to the world
