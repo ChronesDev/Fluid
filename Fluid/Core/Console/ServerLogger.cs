@@ -16,7 +16,7 @@ namespace Fluid.Core.Logger
         {
             Console.Write("[Server]: ");
             int i = 0;
-            while (i <= message.Length)
+            while (i < message.Length)
             {
                 if (message[i].ToString().Equals("§"))
                 {
