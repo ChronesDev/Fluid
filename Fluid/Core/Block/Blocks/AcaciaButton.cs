@@ -16,7 +16,7 @@ namespace Fluid.Core
         
         public override bool IsTransparent { get; } = true;
 
-        public override bool IsFlammable { get; } = false;
+        public override bool IsFlammable { get; } = true;
 
         public override float Hardness { get; } = 0.5f;
 
