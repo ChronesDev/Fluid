@@ -299,7 +299,6 @@ namespace Fluid.Core
                 client.LastKeepAliveSent = DateTime.Now;
                 // TODO: Confirm keep alive
             }
-            }
         }
 
         #endregion
