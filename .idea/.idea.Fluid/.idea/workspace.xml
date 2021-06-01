@@ -7,20 +7,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/AllPacketTypesComeHere.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/EncryptionKeyRequestPacket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/HandshakePacket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginDisconnectPacket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginSuccessPacket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/StatusPing.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/StatusRequestPacket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/StatusResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/UnknownPacket.cs" afterDir="false" />
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="moved many Packet Types to the Core/Network/Packet/Packets directory">
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/JoinGamePacket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/KeepAlivePacket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerLookPacket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerPacket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerPositionAndLookPacket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerPositionPacket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/SpawnPositionPacket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/TimeUpdatePacket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/UpdateHealthPacket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/UseBedPacket.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packets/IPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/IPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/PacketDirection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packet/IPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/IPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/AllPacketTypesComeHere.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/HeldItemPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/EncryptionKeyRequestPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Encryption/EncryptionKeyRequestPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/EncryptionKeyResponsePacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Encryption/EncryptionKeyResponsePacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginDisconnectPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Login/LoginDisconnectPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginStartPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Login/LoginStartPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginSuccessPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Login/LoginSuccessPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/StatusPingPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Status/StatusPingPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/StatusRequestPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Status/StatusRequestPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/StatusResponsePacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Status/StatusResponsePacket.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluid/Fluid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Fluid.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Fluid.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Fluid.csproj.DotSettings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,37 +50,24 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/103/Vector3_Intrinsics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/406/ConcurrentQueue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/61F5185B-E9CF-48B9-8487-181D7861EB9C/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/HandshakePacket.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/StatusRequestPacket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Status/StatusRequestPacket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/33/MathF.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/StatusResponse.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/StatusPing.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginDisconnectPacket.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/IPacket.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Status/StatusResponsePacket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Status/StatusPingPacket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Login/LoginDisconnectPacket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/IPacket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Server.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/EncryptionKeyRequestPacket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Encryption/EncryptionKeyRequestPacket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/102/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginSuccessPacket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Login/LoginSuccessPacket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/UnknownPacket.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/AllPacketTypesComeHere.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/RakNet/RakNet.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Session.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/ClientSession.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Entity/LivingEntity.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entities/OnlinePlayer.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventories/PlayerInventory.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Program.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Format/Level.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Math/Vector2.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Location.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entity.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Generator/LevelGenerator.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Level/Generator/ILevelGenerator.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Level/Generator/Generators/DefaultFlatWorldGenerator.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Chat/LevelChat.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entities/Player.cs" />
@@ -108,6 +105,19 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/EncryptionKeyRequestPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginSuccessPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginStartPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/EncryptionKeyResponsePacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/KeepAlivePacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/UseBedPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/JoinGamePacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/TimeUpdatePacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/SpawnPositionPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/UpdateHealthPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerPositionPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerLookPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerPositionAndLookPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/HeldItemPacket.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/UseBedPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/IPacket.cs" />
     </changedPaths>
   </component>
@@ -170,6 +180,7 @@
       <workItem from="1622379554031" duration="2779000" />
       <workItem from="1622394396929" duration="4867000" />
       <workItem from="1622449879705" duration="7498000" />
+      <workItem from="1622549530233" duration="2148000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -402,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622472184910</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="moved many Packet Types to the Core/Network/Packet/Packets directory">
+      <created>1622549692619</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1622549692619</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +442,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="restructured the Inventories folder" />
     <MESSAGE value="Added descriptions to all ChatColors" />
     <MESSAGE value="restructured some stuff, will be fixed and improved later" />
     <MESSAGE value="added IDisposeable to a few objects and added ItemType / ItemId" />
@@ -449,7 +466,8 @@
     <MESSAGE value="." />
     <MESSAGE value="Fixed item names" />
     <MESSAGE value="The 0.0.0.0 ip uses IPAddress.Parse" />
-    <option name="LAST_COMMIT_MESSAGE" value="The 0.0.0.0 ip uses IPAddress.Parse" />
+    <MESSAGE value="moved many Packet Types to the Core/Network/Packet/Packets directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved many Packet Types to the Core/Network/Packet/Packets directory" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
