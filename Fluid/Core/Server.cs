@@ -76,10 +76,10 @@ namespace Fluid.Core
             if (Initialized) return;
             int port = 19132;
             string ip = "0.0.0.0";
-            ServerLogger.Info($"Server starts opening Port {port} on {ip}.");
+            ServerLogger.Info($"Server starts opening Port {port.ToString()} on {ip}.");
             Main server = new Main();
             server.Start(new IPEndPoint(IPAddress.Parse(ip), port));
-            ServerLogger.Info("§aServer started successfully!");
+            ServerLogger.Info("Server started successfully!");
             Initialized = true;
         }
         
