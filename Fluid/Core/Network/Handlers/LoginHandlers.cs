@@ -1,5 +1,4 @@
-﻿using Craft.Net.Networking;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -39,17 +38,14 @@ namespace Fluid.Core
             else
             {
                 client.Username = packet.Username;
-                if (server.Settings.OnlineMode)
-                    client.ServerId = CreateId();
-                else
-                {
-                    client.ServerId = CreateId();
-                    client.UUID = Guid.NewGuid().ToJavaUUID();
-                }
+                client.ServerId = CreateId();
+                client.SendPacket(CreateEncryptionRequest(client, server));
+                /*
                 if (server.Settings.EnableEncryption)
                    client.SendPacket(CreateEncryptionRequest(client, server));
                 else
                     server.LogInPlayer(client);
+                */
             }
         }
 
