@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fluid.Core.Logger;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -17,6 +18,7 @@ namespace Fluid.Core
         public Main()
         {
             PacketHandlers = new Dictionary<Type, PacketHandler>();
+            ServerLogger.Info("Started");
             Core.PacketHandlers.RegisterHandlers(this);
             NetworkLock = new object();
             Clients = new List<RemoteClient>();
