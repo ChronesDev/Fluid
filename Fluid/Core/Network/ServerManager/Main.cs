@@ -27,7 +27,7 @@ namespace Fluid.Core
         }
 
         #endregion
-
+        
         #region Properties
 
         public List<RemoteClient> Clients { get; set; }
