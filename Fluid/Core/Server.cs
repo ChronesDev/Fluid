@@ -75,18 +75,12 @@ namespace Fluid.Core
         {
             if (Initialized) return;
             int port = 11111;
-            string ip = "play.cimeyclust.de";
+            string ip = "0.0.0.0";
             ServerLogger.Info($"Server starts opening Port {port.ToString()} on {ip}.");
             Main server = new Main();
             server.Start(new IPEndPoint(IPAddress.Parse(ip), port));
             ServerLogger.Info("Server started successfully!");
             Initialized = true;
-            
-            string input = Console.ReadLine();
-            if(input.Equals("stop"))
-            {
-                Environment.Exit(0);
-            }
         }
         
         /// <summary>

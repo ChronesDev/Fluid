@@ -7,10 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/shelf/Uncommitted_changes_before_Update_at_01_06_2021_14_03__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/shelf/Uncommitted_changes_before_Update_at_01_06_2021_14_03__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="moved many Packet Types to the Core/Network/Packet/Packets directory">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Protocol/ProtocolInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Network/Protocol/ProtocolInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Fluid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Fluid.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +19,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -29,17 +30,12 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/33/MathF.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/103/Vector3_Intrinsics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/102/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Server.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/HandshakePacket.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Status/StatusPingPacket.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Status/StatusRequestPacket.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Status/StatusResponsePacket.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Encryption/EncryptionKeyRequestPacket.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Login/LoginDisconnectPacket.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/UnknownPacket.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/Login/LoginSuccessPacket.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Network/Packet/IPacket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/406/ConcurrentQueue.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/61F5185B-E9CF-48B9-8487-181D7861EB9C/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -58,6 +54,7 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Air.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Block/Blocks/Stone.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/ItemId.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Server.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Networking/NetworkManager.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketSender.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketReceiver.cs" />
@@ -92,8 +89,7 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/HeldItemPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/UseBedPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/IPacket.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Server.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Protocol/ProtocolInfo.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -156,7 +152,6 @@
       <workItem from="1622394396929" duration="4867000" />
       <workItem from="1622449879705" duration="7498000" />
       <workItem from="1622549530233" duration="2148000" />
-      <workItem from="1622552936980" duration="1567000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
