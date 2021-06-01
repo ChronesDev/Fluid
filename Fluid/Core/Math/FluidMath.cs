@@ -194,4 +194,3 @@ namespace Fluid.Core
         NegativeZ
     }
 }
-}
