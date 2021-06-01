@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text.Json;
 using Newtonsoft.Json;
 
 namespace Fluid.Core
@@ -21,8 +20,7 @@ namespace Fluid.Core
         
         public static void SaveConfig()
         {
-            var options = new JsonSerializerOptions {WriteIndented = true};
-            string pretty = System.Text.Json.JsonSerializer.Serialize(Properties, options);
+            string pretty = Newtonsoft.Json.JsonConvert.SerializeObject(Properties, Newtonsoft.Json.Formatting.Indented);
             File.WriteAllText("properties.json", pretty); 
         }
 
@@ -34,7 +32,7 @@ namespace Fluid.Core
             }
             else
             {
-                Console.WriteLine("Property Invalid");
+                Console.WriteLine("Invalid property: " + propertyToRead);
                 return null;
             }
         }
