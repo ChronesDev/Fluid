@@ -61,7 +61,7 @@ namespace Fluid.Core
 
         public void Start(IPEndPoint endPoint)
         {
-            if (30 != -1)
+            /**if (30 != -1)
                 NextScheduledSave = DateTime.Now.AddSeconds(30);
 
             CryptoServiceProvider = new RSACryptoServiceProvider(1024);
@@ -74,7 +74,9 @@ namespace Fluid.Core
             Listener.BeginAcceptTcpClient(AcceptClientAsync, null);
 
             NetworkThread = new Thread(NetworkWorker);
-            NetworkThread.Start();
+            NetworkThread.Start();**/
+
+
         }
 
         public void Stop()
