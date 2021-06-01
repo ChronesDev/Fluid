@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace Fluid.Core.Network.Protocol
 {
-    public interface ProtocolInfo
+    public abstract class ProtocolInfo
     {
-
         /**
          * Actual Minecraft: PE protocol version
          */
-        int CURRENT_PROTOCOL = Integer.valueOf("201"); //plugins can change it
+        static int CURRENT_PROTOCOL = int.Parse("201"); //plugins can change it
 
-        List<Integer> SUPPORTED_PROTOCOLS = Ints.asList(CURRENT_PROTOCOL);
+        private List<int> SUPPORTED_PROTOCOLS = new List<int>()
+        {
+            CURRENT_PROTOCOL
+        };
 
         String MINECRAFT_VERSION = "v1.2.10";
         String MINECRAFT_VERSION_NETWORK = "1.2.10";
