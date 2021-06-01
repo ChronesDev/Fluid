@@ -74,22 +74,17 @@ namespace Fluid.Core
             LoginPackets = Populate(serverbound, clientbound);
             // Play packets
             serverbound.Add(typeof(KeepAlivePacket)); // Serverbound
-            serverbound.Add(typeof(ChatMessagePacket));
             serverbound.Add(typeof(UseEntityPacket));
             serverbound.Add(typeof(PlayerPacket));
             serverbound.Add(typeof(PlayerPositionPacket));
             serverbound.Add(typeof(PlayerLookPacket));
             serverbound.Add(typeof(PlayerPositionAndLookPacket));
-            serverbound.Add(typeof(PlayerBlockActionPacket));
-            serverbound.Add(typeof(RightClickPacket));
             serverbound.Add(typeof(HeldItemPacket));
             serverbound.Add(typeof(AnimationPacket));
             serverbound.Add(typeof(EntityActionPacket));
             serverbound.Add(typeof(SteerVehiclePacket));
             serverbound.Add(typeof(CloseWindowPacket));
-            serverbound.Add(typeof(ClickWindowPacket));
             serverbound.Add(typeof(ConfirmTransactionPacket));
-            serverbound.Add(typeof(CreativeInventoryActionPacket));
             serverbound.Add(typeof(EnchantItemPacket));
             serverbound.Add(typeof(UpdateSignPacket));
             serverbound.Add(typeof(PlayerAbilitiesPacket));
@@ -100,20 +95,15 @@ namespace Fluid.Core
 
             clientbound.Add(typeof(KeepAlivePacket)); // Clientbound
             clientbound.Add(typeof(JoinGamePacket));
-            clientbound.Add(typeof(ChatMessagePacket));
             clientbound.Add(typeof(TimeUpdatePacket));
-            clientbound.Add(typeof(EntityEquipmentPacket));
             clientbound.Add(typeof(SpawnPositionPacket));
             clientbound.Add(typeof(UpdateHealthPacket));
-            clientbound.Add(typeof(RespawnPacket));
             clientbound.Add(typeof(PlayerPositionAndLookPacket));
             clientbound.Add(typeof(HeldItemPacket));
             clientbound.Add(typeof(UseBedPacket));
             clientbound.Add(typeof(AnimationPacket));
-            clientbound.Add(typeof(SpawnPlayerPacket));
             clientbound.Add(typeof(CollectItemPacket));
             clientbound.Add(typeof(SpawnObjectPacket));
-            clientbound.Add(typeof(SpawnMobPacket));
             clientbound.Add(typeof(SpawnPaintingPacket));
             clientbound.Add(typeof(SpawnExperienceOrbPacket));
             clientbound.Add(typeof(EntityVelocityPacket));
@@ -126,7 +116,6 @@ namespace Fluid.Core
             clientbound.Add(typeof(EntityHeadLookPacket));
             clientbound.Add(typeof(EntityStatusPacket));
             clientbound.Add(typeof(AttachEntityPacket));
-            clientbound.Add(typeof(EntityMetadataPacket));
             clientbound.Add(typeof(EntityEffectPacket));
             clientbound.Add(typeof(RemoveEntityEffectPacket));
             clientbound.Add(typeof(SetExperiencePacket));
@@ -145,13 +134,10 @@ namespace Fluid.Core
             clientbound.Add(typeof(SpawnGlobalEntityPacket));
             clientbound.Add(typeof(OpenWindowPacket));
             clientbound.Add(typeof(CloseWindowPacket));
-            clientbound.Add(typeof(SetSlotPacket));
-            clientbound.Add(typeof(SetWindowItemsPacket));
             clientbound.Add(typeof(UpdateWindowPropertyPacket));
             clientbound.Add(typeof(ConfirmTransactionPacket));
             clientbound.Add(typeof(UpdateSignPacket));
             clientbound.Add(typeof(MapDataPacket));
-            clientbound.Add(typeof(UpdateTileEntityPacket));
             clientbound.Add(typeof(OpenSignEditorPacket));
             clientbound.Add(typeof(UpdateStatisticsPacket));
             clientbound.Add(typeof(PlayerListItemPacket));
