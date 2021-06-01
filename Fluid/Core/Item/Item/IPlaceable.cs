@@ -2,9 +2,9 @@ namespace Fluid.Core
 {
     public partial record Item
     {
-        public interface ISwingable
+        public interface IPlaceable
         {
-            void Swing(ItemSwingEventArgs e);
+            void Place();
         }
     }
 }
