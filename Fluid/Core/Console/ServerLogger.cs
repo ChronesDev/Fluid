@@ -14,7 +14,8 @@ namespace Fluid.Core.Logger
         /// <param name="message">The message, that the Server have to send</param>
         public static void Info(string message)
         {
-            
+            Console.Write("[Server]: ");
+            Console.WriteLine(message);
         }
     }
 }
