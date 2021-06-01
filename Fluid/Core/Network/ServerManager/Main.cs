@@ -37,7 +37,6 @@ namespace Fluid.Core
         protected internal object NetworkLock { get; set; }
 
         protected Thread NetworkThread { get; set; }
-        protected Thread EntityThread { get; set; }
         protected Dictionary<Type, PacketHandler> PacketHandlers { get; set; }
 
         private DateTime NextPlayerUpdate { get; set; }
@@ -74,7 +73,6 @@ namespace Fluid.Core
 
             NetworkThread = new Thread(NetworkWorker);
             NetworkThread.Start();
-            EntityThread.Start();
         }
 
         public void Stop()
