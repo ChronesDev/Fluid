@@ -81,6 +81,11 @@ namespace Fluid.Core
             server.Start(new IPEndPoint(IPAddress.Parse(ip), port));
             ServerLogger.Info("Server started successfully!");
             Initialized = true;
+            string input = Console.ReadLine();
+            if(input.Equals("stop"))
+            {
+                Environment.Exit(0);
+            }
         }
         
         /// <summary>
