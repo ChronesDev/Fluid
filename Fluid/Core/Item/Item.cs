@@ -20,12 +20,18 @@ namespace Fluid.Core
         
         protected int _Count = 1;
         protected int _Durability = 1;
-        protected bool _IsBroken = false;
+        protected string? _DisplayName;
+        protected bool _IsBroken;
         
         /// <summary>
         /// Determines the ItemType
         /// </summary>
         public abstract ItemType Type { get; }
+        
+        /// <summary>
+        /// Stores the name of the item
+        /// </summary>
+        public abstract string Name { get; }
         
         /// <summary>
         /// Determines the maximum count that item can have
@@ -58,6 +64,12 @@ namespace Fluid.Core
         {
             get => _Durability;
             set { Update(); _Durability = value; }
+        }
+
+        public string? DisplayName
+        {
+            get => _DisplayName;
+            set { Update(); _DisplayName = value; }
         }
 
         /// <summary>
@@ -120,6 +132,7 @@ namespace Fluid.Core
         {
             public override bool Is<T>() => typeof(T) == typeof(Sword);
             public override ItemType Type => ItemType.Bed;
+            public override string Name => "Sword";
             public override int MaxCount => 1;
             public override int MaxDurability => 100;
             public void Swing(ItemSwingEventArgs e)
@@ -136,12 +149,17 @@ namespace Fluid.Core
             };
             s.Count = 2;
 
-            Item item = s;
-
-            if (s is IUseable)
-            {
-                s.As<IUseable>()?.Use(Item.ItemUseEventArgs.Empty);
-            }
+            
+            Item item = s with { DisplayName = $@"{CC.Aqua}I love C#" };
+            
+            // On Right Click
+            s.As<IUseable>()?.Use(Item.ItemUseEventArgs.Empty);
+            
+            // On Left Click
+            s.As<ISwingable>()?.Swing(Item.ItemSwingEventArgs.Empty);
+            
+            
+            
         }
     }
 }

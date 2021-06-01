@@ -7,12 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="added IUseable, ISwingable, all it's EventArgs and extended the Item class">
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Item/Item/IEatable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Item/Item/IPlaceable.cs" afterDir="false" />
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Added IDigable, IEatable, IPlaceable, ISwingable">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Item/Item/Food.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Item/Item/IDigable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Item/Item/ISwingable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Item/Item/ISwingable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Color/CC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Color/CC.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Networking/NetworkManager.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketSender.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/PacketReceiver.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packets/IPacket.cs" />
@@ -80,18 +77,19 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/Useable.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IWeapon.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IAttackable.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IUseable.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Entity/Entity.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Event/EventArgs.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Event/EventArgs/Item/ItemSwingEventArgs.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Event/EventArgs/CancelableEventArgs.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Event/EventArgs/Item/ItemUseEventArgs.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/Food.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IPlaceable.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IDigable.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IEatable.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IDigable.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Color/CC.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IPlaceable.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/ISwingable.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IUseable.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -407,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622564804141</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Added IDigable, IEatable, IPlaceable, ISwingable">
+      <created>1622565316076</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1622565316076</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +434,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added IDisposeable to a few objects and added ItemType / ItemId" />
     <MESSAGE value="fixed AllColorCodes" />
     <MESSAGE value="..." />
     <MESSAGE value="fixed RakNet.cs" />
@@ -454,7 +458,8 @@
     <MESSAGE value="moved many Packet Types to the Core/Network/Packet/Packets directory" />
     <MESSAGE value="Updated Item.cs" />
     <MESSAGE value="added IUseable, ISwingable, all it's EventArgs and extended the Item class" />
-    <option name="LAST_COMMIT_MESSAGE" value="added IUseable, ISwingable, all it's EventArgs and extended the Item class" />
+    <MESSAGE value="Added IDigable, IEatable, IPlaceable, ISwingable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added IDigable, IEatable, IPlaceable, ISwingable" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
