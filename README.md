@@ -19,3 +19,7 @@ A: On every platform that supports dotnet: Windows, MacOs, Linux.
 Q: Why should I use this over other platforms like pocketmine?
 
 A: Because we are nothing like pocketmine and use completely different coding languages.
+
+Q: How do I use this?
+
+A: You cannot use it yet for server hosting.
