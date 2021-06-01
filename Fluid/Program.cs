@@ -15,8 +15,7 @@ namespace Fluid
         
         static void Main(string[] args)
         {
-            Player player = new OnlinePlayer();
-            player.Is<OnlinePlayer>();
+            Server.Start();
         }
     }
 }

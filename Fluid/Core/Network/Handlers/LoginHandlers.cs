@@ -70,7 +70,7 @@ namespace Fluid.Core
             string hash = Cryptography.JavaHexDigest(shaData);
 
             // Talk to sessionserver.minecraft.net
-            if (server.Settings.OnlineMode)
+            if(true) //if (server.Settings.OnlineMode)
             {
                 var webClient = new WebClient();
                 var webReader = new StreamReader(webClient.OpenRead(
@@ -99,23 +99,6 @@ namespace Fluid.Core
         public static void ClientStatus(RemoteClient client, Main server, IPacket _packet)
         {
             var packet = (ClientStatusPacket)_packet;
-            if (packet.Change == ClientStatusPacket.StatusChange.Respawn)
-            {
-                var world = client.Entity.World;
-                client.Entity.Position = new Vector3(
-                    client.Entity.SpawnPoint.X,
-                    // FIXME: This seems to drop the player camera from half the height of a login spawn
-                    client.Entity.SpawnPoint.Y,
-                    client.Entity.SpawnPoint.Z);
-                client.Entity.Health = client.Entity.MaxHealth;
-                client.Entity.Food = 20;
-                client.Entity.FoodSaturation = 20;
-                server.EntityManager.SpawnEntity(world, client.Entity);
-                client.SendPacket(new UpdateHealthPacket(client.Entity.Health, client.Entity.Food, client.Entity.FoodSaturation));
-                client.SendPacket(new RespawnPacket(Dimension.Overworld, server.Settings.Difficulty, client.GameMode, world.WorldGenerator.GeneratorName));
-                client.SendPacket(new PlayerPositionAndLookPacket(client.Entity.Position.X, client.Entity.Position.Y, client.Entity.Position.Z,
-                    client.Entity.Position.Y + PlayerEntity.Height, client.Entity.Yaw, client.Entity.Pitch, true));
-            }
         }
 
         public static void ClientSettings(RemoteClient client, Main server, IPacket _packet)

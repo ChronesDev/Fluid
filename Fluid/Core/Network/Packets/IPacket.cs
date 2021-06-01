@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using Craft.Net.Common;
 using Newtonsoft.Json;
 
 namespace Fluid.Core
@@ -307,30 +306,20 @@ namespace Fluid.Core
 
     public struct JoinGamePacket : IPacket
     {
-        public JoinGamePacket(int entityId, GameMode gameMode, Dimension dimension,
-            Difficulty difficulty, byte maxPlayers, string levelType)
+        public JoinGamePacket(int entityId, byte maxPlayers, string levelType)
         {
             EntityId = entityId;
-            GameMode = gameMode;
-            Dimension = dimension;
-            Difficulty = difficulty;
             MaxPlayers = maxPlayers;
             LevelType = levelType;
         }
 
         public int EntityId;
-        public GameMode GameMode;
-        public Dimension Dimension;
-        public Difficulty Difficulty;
         public byte MaxPlayers;
         public string LevelType;
 
         public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
         {
             EntityId = stream.ReadInt32();
-            GameMode = (GameMode)stream.ReadUInt8();
-            Dimension = (Dimension)stream.ReadInt8();
-            Difficulty = (Difficulty)stream.ReadUInt8();
             MaxPlayers = stream.ReadUInt8();
             LevelType = stream.ReadString();
             return mode;
@@ -339,33 +328,8 @@ namespace Fluid.Core
         public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
         {
             stream.WriteInt32(EntityId);
-            stream.WriteUInt8((byte)GameMode);
-            stream.WriteInt8((sbyte)Dimension);
-            stream.WriteUInt8((byte)Difficulty);
             stream.WriteUInt8(MaxPlayers);
             stream.WriteString(LevelType);
-            return mode;
-        }
-    }
-
-    public struct ChatMessagePacket : IPacket
-    {
-        public ChatMessagePacket(string message)
-        {
-            Message = new ChatMessage(message);
-        }
-
-        public ChatMessage Message;
-
-        public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            Message = new ChatMessage(stream.ReadString());
-            return mode;
-        }
-
-        public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            stream.WriteString(Message.RawMessage);
             return mode;
         }
     }
@@ -392,45 +356,6 @@ namespace Fluid.Core
         {
             stream.WriteInt64(WorldAge);
             stream.WriteInt64(TimeOfDay);
-            return mode;
-        }
-    }
-
-    public struct EntityEquipmentPacket : IPacket
-    {
-        public enum EntityEquipmentSlot
-        {
-            HeldItem = 0,
-            Headgear = 1,
-            Chestplate = 2,
-            Pants = 3,
-            Footwear = 4
-        }
-
-        public EntityEquipmentPacket(int entityId, EntityEquipmentSlot slot, ItemStack item)
-        {
-            EntityId = entityId;
-            Slot = slot;
-            Item = item;
-        }
-
-        public int EntityId;
-        public EntityEquipmentSlot Slot;
-        public ItemStack Item;
-
-        public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            EntityId = stream.ReadInt32();
-            Slot = (EntityEquipmentSlot)stream.ReadInt16();
-            Item = ItemStack.FromStream(stream);
-            return mode;
-        }
-
-        public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            stream.WriteInt32(EntityId);
-            stream.WriteInt16((short)Slot);
-            Item.WriteTo(stream);
             return mode;
         }
     }
@@ -489,40 +414,6 @@ namespace Fluid.Core
             stream.WriteSingle(Health);
             stream.WriteInt16(Food);
             stream.WriteSingle(FoodSaturation);
-            return mode;
-        }
-    }
-
-    public struct RespawnPacket : IPacket
-    {
-        public RespawnPacket(Dimension dimension, Difficulty difficulty, GameMode gameMode, string levelType)
-        {
-            Dimension = dimension;
-            Difficulty = difficulty;
-            GameMode = gameMode;
-            LevelType = levelType;
-        }
-
-        public Dimension Dimension;
-        public Difficulty Difficulty;
-        public GameMode GameMode;
-        public string LevelType;
-
-        public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            Dimension = (Dimension)stream.ReadInt32();
-            Difficulty = (Difficulty)stream.ReadUInt8();
-            GameMode = (GameMode)stream.ReadUInt8();
-            LevelType = stream.ReadString();
-            return mode;
-        }
-
-        public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            stream.WriteInt32((int)Dimension);
-            stream.WriteUInt8((byte)Difficulty);
-            stream.WriteUInt8((byte)GameMode);
-            stream.WriteString(LevelType);
             return mode;
         }
     }
@@ -798,61 +689,6 @@ namespace Fluid.Core
         }
     }
 
-    public struct SpawnPlayerPacket : IPacket
-    {
-        public SpawnPlayerPacket(int entityId, string uuid, string playerName, int x,
-            int y, int z, byte yaw, byte pitch, short heldItem, MetadataDictionary metadata)
-        {
-            EntityId = entityId;
-            UUID = uuid;
-            PlayerName = playerName;
-            X = x;
-            Y = y;
-            Z = z;
-            Yaw = yaw;
-            Pitch = pitch;
-            HeldItem = heldItem;
-            Metadata = metadata;
-        }
-
-        public int EntityId;
-        public string PlayerName, UUID;
-        public int X, Y, Z;
-        public byte Yaw, Pitch;
-        public short HeldItem;
-        public MetadataDictionary Metadata;
-
-        public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            EntityId = stream.ReadVarInt();
-            UUID = stream.ReadString();
-            PlayerName = stream.ReadString();
-            X = stream.ReadInt32();
-            Y = stream.ReadInt32();
-            Z = stream.ReadInt32();
-            Yaw = stream.ReadUInt8();
-            Pitch = stream.ReadUInt8();
-            HeldItem = stream.ReadInt16();
-            Metadata = MetadataDictionary.FromStream(stream);
-            return mode;
-        }
-
-        public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            stream.WriteVarInt(EntityId);
-            stream.WriteString(UUID);
-            stream.WriteString(PlayerName);
-            stream.WriteInt32(X);
-            stream.WriteInt32(Y);
-            stream.WriteInt32(Z);
-            stream.WriteUInt8(Yaw);
-            stream.WriteUInt8(Pitch);
-            stream.WriteInt16(HeldItem);
-            Metadata.WriteTo(stream);
-            return mode;
-        }
-    }
-
     public struct CollectItemPacket : IPacket
     {
         public CollectItemPacket(int itemId, int playerId)
@@ -940,68 +776,6 @@ namespace Fluid.Core
                 stream.WriteInt16(SpeedY.Value);
                 stream.WriteInt16(SpeedZ.Value);
             }
-            return mode;
-        }
-    }
-
-    public struct SpawnMobPacket : IPacket
-    {
-        public SpawnMobPacket(int entityId, byte type, int x,
-            int y, int z, byte yaw, byte pitch, byte headYaw, short velocityX,
-            short velocityY, short velocityZ, MetadataDictionary metadata)
-        {
-            EntityId = entityId;
-            Type = type;
-            X = x;
-            Y = y;
-            Z = z;
-            Yaw = yaw;
-            Pitch = pitch;
-            HeadYaw = headYaw;
-            VelocityX = velocityX;
-            VelocityY = velocityY;
-            VelocityZ = velocityZ;
-            Metadata = metadata;
-        }
-
-        public int EntityId;
-        public byte Type;
-        public int X, Y, Z;
-        public byte Yaw, Pitch, HeadYaw;
-        public short VelocityX, VelocityY, VelocityZ;
-        public MetadataDictionary Metadata;
-
-        public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            EntityId = stream.ReadVarInt();
-            Type = stream.ReadUInt8();
-            X = stream.ReadInt32();
-            Y = stream.ReadInt32();
-            Z = stream.ReadInt32();
-            Yaw = stream.ReadUInt8();
-            Pitch = stream.ReadUInt8();
-            HeadYaw = stream.ReadUInt8();
-            VelocityX = stream.ReadInt16();
-            VelocityY = stream.ReadInt16();
-            VelocityZ = stream.ReadInt16();
-            Metadata = MetadataDictionary.FromStream(stream);
-            return mode;
-        }
-
-        public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            stream.WriteVarInt(EntityId);
-            stream.WriteUInt8(Type);
-            stream.WriteInt32(X);
-            stream.WriteInt32(Y);
-            stream.WriteInt32(Z);
-            stream.WriteUInt8(Yaw);
-            stream.WriteUInt8(Pitch);
-            stream.WriteUInt8(HeadYaw);
-            stream.WriteInt16(VelocityX);
-            stream.WriteInt16(VelocityY);
-            stream.WriteInt16(VelocityZ);
-            Metadata.WriteTo(stream);
             return mode;
         }
     }
@@ -1399,32 +1173,6 @@ namespace Fluid.Core
             stream.WriteInt32(EntityId);
             stream.WriteInt32(VehicleId);
             stream.WriteBoolean(Leash);
-            return mode;
-        }
-    }
-
-    public struct EntityMetadataPacket : IPacket
-    {
-        public EntityMetadataPacket(int entityId, MetadataDictionary metadata)
-        {
-            EntityId = entityId;
-            Metadata = metadata;
-        }
-
-        public int EntityId;
-        public MetadataDictionary Metadata;
-
-        public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            EntityId = stream.ReadInt32();
-            Metadata = MetadataDictionary.FromStream(stream);
-            return mode;
-        }
-
-        public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            stream.WriteInt32(EntityId);
-            Metadata.WriteTo(stream);
             return mode;
         }
     }
@@ -2194,234 +1942,6 @@ namespace Fluid.Core
         }
     }
 
-    public struct ClickWindowPacket : IPacket
-    {
-        public enum ClickAction
-        {
-            LeftClick,
-            RightClick,
-            ShiftLeftClick,
-            ShiftRightClick,
-            NumKey1, NumKey2, NumKey3, NumKey4, NumKey5, NumKey6, NumKey7, NumKey8, NumKey9,
-            MiddleClick,
-            Drop,
-            DropAll,
-            LeftClickEdgeWithEmptyHand,
-            RightClickEdgeWithEmptyHand,
-            StartLeftClickPaint,
-            StartRightClickPaint,
-            LeftMousePaintProgress,
-            RightMousePaintProgress,
-            EndLeftMousePaint,
-            EndRightMousePaint,
-            DoubleClick,
-            Invalid
-        }
-
-        public ClickWindowPacket(sbyte windowId, short slotIndex, byte mouseButton, short transactionId,
-            byte mode, ItemStack clickedItem) : this()
-        {
-            WindowId = windowId;
-            SlotIndex = slotIndex;
-            MouseButton = mouseButton;
-            TransactionId = transactionId;
-            Mode = mode;
-            ClickedItem = clickedItem;
-        }
-
-        public sbyte WindowId;
-        public short SlotIndex;
-        public byte MouseButton;
-        public short TransactionId;
-        public byte Mode;
-        public ItemStack ClickedItem;
-
-        public ClickAction Action { get; private set; }
-
-        public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            WindowId = stream.ReadInt8();
-            SlotIndex = stream.ReadInt16();
-            MouseButton = stream.ReadUInt8();
-            TransactionId = stream.ReadInt16();
-            Mode = stream.ReadUInt8();
-            ClickedItem = ItemStack.FromStream(stream);
-            if (Mode == 0)
-            {
-                if (MouseButton == 0)
-                {
-                    if (SlotIndex == -999)
-                        Action = ClickAction.DropAll;
-                    else
-                        Action = ClickAction.LeftClick;
-                }
-                else if (MouseButton == 1)
-                {
-                    if (SlotIndex == -999)
-                        Action = ClickAction.Drop;
-                    else
-                        Action = ClickAction.RightClick;
-                }
-                else
-                    Action = ClickAction.Invalid;
-            }
-            else if (Mode == 1)
-            {
-                if (MouseButton == 0)
-                    Action = ClickAction.ShiftLeftClick;
-                else if (MouseButton == 1)
-                    Action = ClickAction.ShiftRightClick;
-                else
-                    Action = ClickAction.Invalid;
-            }
-            else if (Mode == 2)
-            {
-                if (MouseButton == 0)
-                    Action = ClickAction.NumKey1;
-                else if (MouseButton == 1)
-                    Action = ClickAction.NumKey2;
-                else if (MouseButton == 2)
-                    Action = ClickAction.NumKey3;
-                else if (MouseButton == 3)
-                    Action = ClickAction.NumKey4;
-                else if (MouseButton == 4)
-                    Action = ClickAction.NumKey5;
-                else if (MouseButton == 5)
-                    Action = ClickAction.NumKey6;
-                else if (MouseButton == 6)
-                    Action = ClickAction.NumKey7;
-                else if (MouseButton == 7)
-                    Action = ClickAction.NumKey8;
-                else if (MouseButton == 8)
-                    Action = ClickAction.NumKey9;
-                else
-                    Action = ClickAction.Invalid;
-            }
-            else if (Mode == 3)
-            {
-                if (MouseButton == 2)
-                    Action = ClickAction.MiddleClick;
-                else
-                    Action = ClickAction.Invalid;
-            }
-            else if (Mode == 4)
-            {
-                if (SlotIndex == -999)
-                {
-                    if (Mode == 0)
-                        Action = ClickAction.LeftClickEdgeWithEmptyHand;
-                    else if (Mode == 1)
-                        Action = ClickAction.RightClickEdgeWithEmptyHand;
-                    else
-                        Action = ClickAction.Invalid;
-                }
-                else
-                {
-                    if (Mode == 0)
-                        Action = ClickAction.Drop;
-                    else if (Mode == 1)
-                        Action = ClickAction.DropAll;
-                    else
-                        Action = ClickAction.Invalid;
-                }
-            }
-            else if (Mode == 5)
-            {
-                if (MouseButton == 0)
-                    Action = ClickAction.StartLeftClickPaint;
-                else if (MouseButton == 1)
-                    Action = ClickAction.LeftMousePaintProgress;
-                else if (MouseButton == 2)
-                    Action = ClickAction.EndLeftMousePaint;
-                else if (MouseButton == 4)
-                    Action = ClickAction.StartRightClickPaint;
-                else if (MouseButton == 5)
-                    Action = ClickAction.RightMousePaintProgress;
-                else if (MouseButton == 6)
-                    Action = ClickAction.EndRightMousePaint;
-                else
-                    Action = ClickAction.Invalid;
-            }
-            else if (Mode == 6)
-                Action = ClickAction.DoubleClick;
-            else
-                Action = ClickAction.Invalid;
-            return mode;
-        }
-
-        public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            stream.WriteInt8(WindowId);
-            stream.WriteInt16(SlotIndex);
-            stream.WriteUInt8(MouseButton);
-            stream.WriteInt16(TransactionId);
-            stream.WriteUInt8(Mode);
-            ClickedItem.WriteTo(stream);
-            return mode;
-        }
-    }
-
-    public struct SetSlotPacket : IPacket
-    {
-        public SetSlotPacket(byte windowId, short slotIndex, ItemStack item)
-        {
-            WindowId = windowId;
-            SlotIndex = slotIndex;
-            Item = item;
-        }
-        
-        public byte WindowId;
-        public short SlotIndex;
-        public ItemStack Item;
-
-        public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            WindowId = stream.ReadUInt8();
-            SlotIndex = stream.ReadInt16();
-            Item = ItemStack.FromStream(stream);
-            return mode;
-        }
-
-        public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            stream.WriteUInt8(WindowId);
-            stream.WriteInt16(SlotIndex);
-            Item.WriteTo(stream);
-            return mode;
-        }
-    }
-
-    public struct SetWindowItemsPacket : IPacket
-    {
-        public SetWindowItemsPacket(byte windowId, ItemStack[] items)
-        {
-            WindowId = windowId;
-            Items = items;
-        }
-        
-        public byte WindowId;
-        public ItemStack[] Items;
-
-        public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            WindowId = stream.ReadUInt8();
-            short count = stream.ReadInt16();
-            Items = new ItemStack[count];
-            for (int i = 0; i < count; i++)
-                Items[i] = ItemStack.FromStream(stream);
-            return mode;
-        }
-
-        public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            stream.WriteUInt8(WindowId);
-            stream.WriteInt16((short)Items.Length);
-            for (int i = 0; i < Items.Length; i++)
-                Items[i].WriteTo(stream);
-            return mode;
-        }
-    }
-
     public struct UpdateWindowPropertyPacket : IPacket
     {
         public UpdateWindowPropertyPacket(byte windowId, short propertyId, short value)
@@ -2550,51 +2070,6 @@ namespace Fluid.Core
             stream.WriteVarInt(Metadata);
             stream.WriteInt16((short)Data.Length);
             stream.WriteUInt8Array(Data);
-            return mode;
-        }
-    }
-
-    public struct UpdateTileEntityPacket : IPacket
-    {
-        public UpdateTileEntityPacket(int x, short y, int z, byte action, NbtFile nbt)
-        {
-            X = x;
-            Y = y;
-            Z = z;
-            Action = action;
-            Nbt = nbt;
-        }
-        
-        public int X;
-        public short Y;
-        public int Z;
-        public byte Action;
-        public NbtFile Nbt;
-
-        public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            X = stream.ReadInt32();
-            Y = stream.ReadInt16();
-            Z = stream.ReadInt32();
-            Action = stream.ReadUInt8();
-            var length = stream.ReadInt16();
-            var data = stream.ReadUInt8Array(length);
-            Nbt = new NbtFile();
-            Nbt.LoadFromBuffer(data, 0, length, NbtCompression.GZip, null);
-            return mode;
-        }
-
-        public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            stream.WriteInt32(X);
-            stream.WriteInt16(Y);
-            stream.WriteInt32(Z);
-            stream.WriteUInt8(Action);
-            var tempStream = new MemoryStream();
-            Nbt.SaveToStream(tempStream, NbtCompression.GZip);
-            var buffer = tempStream.GetBuffer();
-            stream.WriteInt16((short)buffer.Length);
-            stream.WriteUInt8Array(buffer);
             return mode;
         }
     }
@@ -3087,103 +2562,6 @@ namespace Fluid.Core
         }
     }
 
-    public struct PlayerBlockActionPacket : IPacket
-    {
-        public enum BlockAction
-        {
-            StartDigging = 0,
-            CancelDigging = 1,
-            FinishDigging = 2,
-            DropItemStack = 3,
-            DropItem = 4,
-            NOP = 5
-        }
-
-        public PlayerBlockActionPacket(BlockAction action, int x, byte y, int z, BlockFace face)
-        {
-            Action = action;
-            X = x;
-            Y = y;
-            Z = z;
-            Face = face;
-        }
-
-        public BlockAction Action;
-        public int X;
-        public byte Y;
-        public int Z;
-        public BlockFace Face;
-
-        public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            Action = (BlockAction)stream.ReadInt8();
-            X = stream.ReadInt32();
-            Y = stream.ReadUInt8();
-            Z = stream.ReadInt32();
-            Face = (BlockFace)stream.ReadInt8();
-            return mode;
-        }
-
-        public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            stream.WriteInt8((sbyte)Action);
-            stream.WriteInt32(X);
-            stream.WriteUInt8(Y);
-            stream.WriteInt32(Z);
-            stream.WriteInt8((sbyte)Face);
-            return mode;
-        }
-    }
-
-    public struct RightClickPacket : IPacket
-    {
-        public RightClickPacket(int x, byte y, int z, BlockFace direction, ItemStack heldItem,
-            sbyte cursorX, sbyte cursorY, sbyte cursorZ)
-        {
-            X = x;
-            Y = y;
-            Z = z;
-            Face = direction;
-            HeldItem = heldItem;
-            CursorX = cursorX;
-            CursorY = cursorY;
-            CursorZ = cursorZ;
-        }
-
-        public int X;
-        public byte Y;
-        public int Z;
-        public BlockFace Face;
-        public ItemStack HeldItem;
-        public sbyte CursorX, CursorY, CursorZ;
-
-        public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            X = stream.ReadInt32();
-            Y = stream.ReadUInt8();
-            Z = stream.ReadInt32();
-            Face = (BlockFace)stream.ReadUInt8();
-            HeldItem = ItemStack.FromStream(stream);
-            CursorX = stream.ReadInt8();
-            CursorY = stream.ReadInt8();
-            CursorZ = stream.ReadInt8();
-            return mode;
-        }
-
-        public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            stream.WriteInt32(X);
-            stream.WriteUInt8(Y);
-            stream.WriteInt32(Z);
-            stream.WriteUInt8((byte)Face);
-            HeldItem.WriteTo(stream);
-            stream.WriteInt8(CursorX);
-            stream.WriteInt8(CursorY);
-            stream.WriteInt8(CursorZ);
-            return mode;
-        }
-    }
-
     public struct EntityActionPacket : IPacket
     {
         public enum EntityAction
@@ -3255,32 +2633,6 @@ namespace Fluid.Core
         }
     }
 
-    public struct CreativeInventoryActionPacket : IPacket
-    {
-        public CreativeInventoryActionPacket(short slot, ItemStack item)
-        {
-            Slot = slot;
-            Item = item;
-        }
-
-        public short Slot;
-        public ItemStack Item;
-
-        public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            Slot = stream.ReadInt16();
-            Item = ItemStack.FromStream(stream);
-            return mode;
-        }
-
-        public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            stream.WriteInt16(Slot);
-            Item.WriteTo(stream);
-            return mode;
-        }
-    }
-
     public struct EnchantItemPacket : IPacket
     {
         public EnchantItemPacket(sbyte windowId, sbyte enchantmentIndex)
@@ -3317,13 +2669,12 @@ namespace Fluid.Core
         }
 
         public ClientSettingsPacket(string locale, byte viewDistance, ChatMode chatFlags, bool colorEnabled,
-            Difficulty difficulty, bool showCape)
+            bool showCape)
         {
             Locale = locale;
             ViewDistance = viewDistance;
             ChatFlags = chatFlags;
             ColorEnabled = colorEnabled;
-            Difficulty = difficulty;
             ShowCape = showCape;
         }
 
@@ -3331,7 +2682,6 @@ namespace Fluid.Core
         public byte ViewDistance;
         public ChatMode ChatFlags;
         public bool ColorEnabled;
-        public Difficulty Difficulty;
         public bool ShowCape;
 
         public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
@@ -3341,7 +2691,6 @@ namespace Fluid.Core
             var flags = stream.ReadUInt8();
             ChatFlags = (ChatMode)(flags & 0x3);
             ColorEnabled = stream.ReadBoolean();
-            Difficulty = (Difficulty)stream.ReadUInt8();
             ShowCape = stream.ReadBoolean();
             return mode;
         }
@@ -3352,7 +2701,6 @@ namespace Fluid.Core
             stream.WriteUInt8(ViewDistance);
             stream.WriteUInt8((byte)ChatFlags);
             stream.WriteBoolean(ColorEnabled);
-            stream.WriteUInt8((byte)Difficulty);
             stream.WriteBoolean(ShowCape);
             return mode;
         }
@@ -3389,22 +2737,3 @@ namespace Fluid.Core
 
     #endregion
 }
-/*
-    public struct KeepAlivePacket : IPacket
-    {
-        public KeepAlivePacket()
-        {
-        }
-
-
-        public NetworkMode ReadPacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            return mode;
-        }
-
-        public NetworkMode WritePacket(MinecraftStream stream, NetworkMode mode, PacketDirection direction)
-        {
-            return mode;
-        }
-    }
-*/
