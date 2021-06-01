@@ -298,7 +298,7 @@ namespace Fluid.Core
                 client.SendPacket(new KeepAlivePacket(FluidMath.Random.Next()));
                 client.LastKeepAliveSent = DateTime.Now;
                 // TODO: Confirm keep alive
-            
+            }
         }
 
         #endregion
