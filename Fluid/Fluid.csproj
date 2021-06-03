@@ -30,6 +30,7 @@
       <Folder Include="Core\Command\Commands" />
       <Folder Include="Core\Entity\Meta" />
       <Folder Include="Core\Item\Item\Items" />
+      <Folder Include="Core\Network\Handler\" />
     </ItemGroup>
 
     <ItemGroup>

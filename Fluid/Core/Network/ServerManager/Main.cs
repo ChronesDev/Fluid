@@ -11,22 +11,14 @@ namespace Fluid.Core
 {
     public class Main
     {
-        
-
-        private DataPack[] PacketPool { get; set; }
-
-        public void RegisterPacket(byte id, DataPack pack)
+        public Main(string ip, int port)
         {
-            PacketPool[id & 0xff] = pack;
-        }
+            //Creates an IpEndPoint.
+            IPAddress ipAddress = Dns.GetHostEntry(ip).AddressList[0];
+            IPEndPoint ipLocalEndPoint = new IPEndPoint(ipAddress, port);
 
-        public void RegisterPackets()
-        {
-            PacketPool = new DataPack[256];
-            RegisterPacket(ProtocolInfo.LOGIN_PACKET, new DataPack());
-            RegisterPacket(ProtocolInfo.PLAY_STATUS_PACKET, new DataPack());
-            RegisterPacket(ProtocolInfo.SERVER_TO_CLIENT_HANDSHAKE_PACKET, new DataPack());
-            RegisterPacket(ProtocolInfo.CLIENT_TO_SERVER_HANDSHAKE_PACKET, new DataPack());
+            //Serializes the IPEndPoint.
+            SocketAddress socketAddress = ipLocalEndPoint.Serialize();
         }
     }
 }
