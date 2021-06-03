@@ -48,6 +48,18 @@ namespace Fluid.Core
         public void HandleUpdate() { _IsUpdated = false; _Item?.HandleUpdate(); }
 
         /// <summary>
+        /// Sets the Item
+        /// </summary>
+        /// <param name="item">The Item</param>
+        public void Set(Item? item) => Item = item;
+
+        /// <summary>
+        /// Gets the holding Item
+        /// </summary>
+        /// <returns>Returns the holding Item</returns>
+        public Item? Get() => Item;
+        
+        /// <summary>
         /// Swaps the two items from the two item slots
         /// </summary>
         /// <param name="other">The other ItemSlot</param>

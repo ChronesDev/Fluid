@@ -7,12 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="...">
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Inventory/ItemSlot.cs" afterDir="false" />
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Inventory/Inventories/PlayerInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Inventory/Inventories/PlayerInventory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluid/Core/Inventory/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Inventory/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Inventory/ItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Inventory/ItemSlot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +33,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/103/Vector3_Intrinsics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/102/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Item/Item.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/406/ConcurrentQueue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/61F5185B-E9CF-48B9-8487-181D7861EB9C/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Item/Item.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -90,9 +86,9 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/ISwingable.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item/IUseable.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Item/Item.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventories/PlayerInventory.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Inventory/ItemSlot.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventory.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Inventory/Inventories/PlayerInventory.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
@@ -155,7 +151,8 @@
       <workItem from="1622394396929" duration="4867000" />
       <workItem from="1622449879705" duration="7498000" />
       <workItem from="1622549530233" duration="2148000" />
-      <workItem from="1622620874225" duration="4252000" />
+      <workItem from="1622620874225" duration="4722000" />
+      <workItem from="1622659359143" duration="1519000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -437,7 +434,35 @@
       <option name="project" value="LOCAL" />
       <updated>1622621163774</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Updated Item.cs">
+      <created>1622625246497</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1622625246497</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Added the ItemSlot class">
+      <created>1622625260245</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1622625260245</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Extended the Inventory class">
+      <created>1622625280128</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1622625280128</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Extended the PlayerInventory class">
+      <created>1622625297799</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1622625297799</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,9 +484,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="ItemId's are now const" />
-    <MESSAGE value="changed from UPPERCASE to lowercase, some names need to be fixed though" />
-    <MESSAGE value="fixed hex formatting" />
     <MESSAGE value="oops" />
     <MESSAGE value="fixed packet and Raknet stuff" />
     <MESSAGE value="changed a few things" />
@@ -478,13 +500,16 @@
     <MESSAGE value="Fixed item names" />
     <MESSAGE value="The 0.0.0.0 ip uses IPAddress.Parse" />
     <MESSAGE value="moved many Packet Types to the Core/Network/Packet/Packets directory" />
-    <MESSAGE value="Updated Item.cs" />
     <MESSAGE value="added IUseable, ISwingable, all it's EventArgs and extended the Item class" />
     <MESSAGE value="Added IDigable, IEatable, IPlaceable, ISwingable" />
     <MESSAGE value="test" />
     <MESSAGE value="test2" />
     <MESSAGE value="..." />
-    <option name="LAST_COMMIT_MESSAGE" value="..." />
+    <MESSAGE value="Updated Item.cs" />
+    <MESSAGE value="Added the ItemSlot class" />
+    <MESSAGE value="Extended the Inventory class" />
+    <MESSAGE value="Extended the PlayerInventory class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extended the PlayerInventory class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

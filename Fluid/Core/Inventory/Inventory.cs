@@ -43,6 +43,23 @@ namespace Fluid.Core
         public abstract void SetSlot(ItemSlot slot, int index);
 
         /// <summary>
+        /// Sets the item at the index. Can throw an OutOfRangeException if an invalid index is specified.
+        /// </summary>
+        /// <param name="item">The Item</param>
+        /// <param name="index">The index</param>
+        public void Set(Item? item, int index)
+        {
+            AtSlot(index).Set(item);
+        }
+
+        /// <summary>
+        /// Gets the Item from the slot index. Can throw an OutOfRangeException if an invalid index is specified.
+        /// </summary>
+        /// <param name="index">The index</param>
+        /// <returns>Returns the Item from the slot index</returns>
+        public Item? Get(int index) => GetSlot(index).Item;
+        
+        /// <summary>
         /// Gets a reference to the item by the index
         /// </summary>
         /// <param name="index">The index</param>
