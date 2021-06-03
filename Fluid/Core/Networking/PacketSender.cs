@@ -10,7 +10,7 @@ namespace Fluid.Core
         public class PacketSender
         {
             /// <summary>
-            /// An event that is being invoked when a packet is being send
+            /// An event that is being invoked when a packet is being sent
             /// </summary>
             public Event<CancelableEventArgs> PacketSent { get; protected set; } = new();
             
