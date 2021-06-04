@@ -31,4 +31,4 @@ A: You cannot use it yet for server hosting.
 
 --------------
 # Community
-Discord: https://discord.gg/fzHRSAXRw2
+Discord: https://discord.gg/35ZtRJpB45
