@@ -24,7 +24,7 @@ namespace Fluid.Core
 
         private void Receive()
         {
-            Console.WriteLine("Hearing on localhost 11111");
+            Console.WriteLine("Listening on port 19132.");
             byte[] data = Socket.Receive(ref EpFrom);
             Console.WriteLine(Encoding.ASCII.GetString(data));
         }

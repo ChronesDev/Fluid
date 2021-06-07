@@ -88,7 +88,7 @@ namespace Fluid.Core
         public static void Start()
         {
             if (Initialized) return;
-            int port = 11111;
+            int port = 19132;
             string ip = "0.0.0.0";
             ServerLogger.Info($"Server starts opening Port {port.ToString()} on {ip}.");
             //Main server = new Main();
