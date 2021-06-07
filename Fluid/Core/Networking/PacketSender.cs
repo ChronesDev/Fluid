@@ -1,4 +1,6 @@
 using System;
+using System.IO;
+using System.Net;
 
 namespace Fluid.Core
 {
@@ -17,7 +19,10 @@ namespace Fluid.Core
             /// <summary>
             /// Sends the packet to the client
             /// </summary>
-            public void SendPacket(/* ClientConnection clientConnection, IPacket packet */) { }
+            public void SendPacket(SocketAddress receiverAddress, BinaryWriter packet)
+            {
+                packet.Write("Test");
+            }
 
             /// <summary>
             /// Sends the bytes to the client

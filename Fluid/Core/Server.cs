@@ -17,9 +17,16 @@ namespace Fluid.Core
         /// This variable is being used to determine if the server is ready to use
         /// </summary>
         private static bool Initialized { get; set; } = false;
-        
+
+        // Network
+
+        /// <summary>
+        /// This variable is being used to determine if the server is ready to use
+        /// </summary>
+        public static Network Network { get; set; }
+
         // Players
-        
+
         /// <summary>
         /// Stores all OnlinePlayers
         /// </summary>
@@ -66,7 +73,7 @@ namespace Fluid.Core
         /// <summary>
         /// Handles the incoming and outcoming packets
         /// </summary>
-        public static Network Network { get; private set; } = new();
+        public static Network network { get; private set; } = new();
         
         // Random
 
