@@ -22,7 +22,7 @@ namespace Fluid.Core
         protected int _Durability = 1;
         protected string? _DisplayName;
         protected bool _IsBroken;
-        private bool _IsUpdated = false;
+        private bool _IsUpdated = true;
         
         /// <summary>
         /// Determines the ItemType

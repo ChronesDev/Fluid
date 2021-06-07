@@ -28,3 +28,7 @@ A: Because we are nothing like pocketmine and use completely different coding la
 Q: How do I use this?
 
 A: You cannot use it yet for server hosting.
+
+--------------
+# Community
+Discord: https://discord.gg/35ZtRJpB45

@@ -17,9 +17,16 @@ namespace Fluid.Core
         /// This variable is being used to determine if the server is ready to use
         /// </summary>
         private static bool Initialized { get; set; } = false;
-        
+
+        // Network
+
+        /// <summary>
+        /// This variable is being used to determine if the server is ready to use
+        /// </summary>
+        public static Network Network { get; set; }
+
         // Players
-        
+
         /// <summary>
         /// Stores all OnlinePlayers
         /// </summary>
@@ -61,6 +68,13 @@ namespace Fluid.Core
         /// </summary>
         public static List<Level> Worlds { get; private set; } = new();
         
+        // Network
+        
+        /// <summary>
+        /// Handles the incoming and outcoming packets
+        /// </summary>
+        public static Network network { get; private set; } = new();
+        
         // Random
 
         /// <summary>
@@ -69,7 +83,7 @@ namespace Fluid.Core
         public static Random Random { get; set; } = new();
 
         /// <summary>
-        /// Starts the Server
+        /// Starts the server
         /// </summary>
         public static void Start()
         {
@@ -77,16 +91,16 @@ namespace Fluid.Core
             int port = 11111;
             string ip = "0.0.0.0";
             ServerLogger.Info($"Server starts opening Port {port.ToString()} on {ip}.");
-            Main server = new Main();
+            //Main server = new Main();
             //server.Start(new IPEndPoint(IPAddress.Parse(ip), port));
             ServerLogger.Info("Server started successfully!");
             Initialized = true;
         }
         
         /// <summary>
-        /// Server shutdown
+        /// Stops the server
         /// </summary>
-        public static void Shutdown()
+        public static void Stop()
         {
             if (!Initialized) return;
             Initialized = false;
