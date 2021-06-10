@@ -41,7 +41,10 @@ namespace Fluid.Core
         {
             Console.WriteLine("Listening on port 11111.");
             byte[] data = Socket.Receive(ref EpFrom);
-            Console.WriteLine(data);
+            foreach (byte data1 in data)
+            {
+                Console.Write(data1);
+            }
         }
     }
 }
