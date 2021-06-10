@@ -2,6 +2,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System;
+using System.IO;
 
 namespace Fluid.Core
 {
@@ -14,6 +15,20 @@ namespace Fluid.Core
         {
             this.Socket = new UdpClient(new IPEndPoint(IPAddress.Parse(address), port));
             Receive();
+        }
+
+        public void Pack()
+        {
+            MemoryStream stream = new MemoryStream();
+            BinaryWriter writer = new BinaryWriter(stream);
+        }
+
+        public void UnPack(byte[] packet)
+        {
+            MemoryStream stream = new MemoryStream();
+            BinaryReader reader = new BinaryReader(stream);
+
+            reader.ReadByte();
         }
 
         public void Send(string text)
