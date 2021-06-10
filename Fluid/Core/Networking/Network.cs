@@ -3,6 +3,7 @@ using System.Net.Sockets;
 using System.Text;
 using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace Fluid.Core
 {
@@ -28,7 +29,12 @@ namespace Fluid.Core
             MemoryStream stream = new MemoryStream();
             BinaryReader reader = new BinaryReader(stream);
 
-            reader.ReadByte();
+            reader.ReadBytes(5);
+        }
+
+        public void Batch(byte[] packet)
+        {
+            
         }
 
         public void Send(string text)
@@ -41,10 +47,7 @@ namespace Fluid.Core
         {
             Console.WriteLine("Listening on port 11111.");
             byte[] data = Socket.Receive(ref EpFrom);
-            foreach (byte data1 in data)
-            {
-                Console.Write(data1);
-            }
+            Console.WriteLine();
         }
     }
 }
