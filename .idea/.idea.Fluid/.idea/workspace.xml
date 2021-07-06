@@ -8,26 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Core/Event/EventArgs/Networking/PacketReceiver/PrePacketReceivedEventArgs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Networking/Network.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Networking/PacketReceiver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Networking/PacketSender.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Networking/Protocol/ProtocolInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Permission/Permission.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/shelf/Uncommitted_changes_before_Update_at_01_06_2021_14_03_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/shelf/Uncommitted_changes_before_Update_at_01_06_2021_14_03__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/shelf/Uncommitted_changes_before_Update_at_01_06_2021_15_40_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/shelf/Uncommitted_changes_before_Update_at_01_06_2021_15_40__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Core/IDestroyable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Core/Interfaces/IDestroyable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Event/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Core/Event/Event.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Event/EventArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Core/Event/EventArgs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Event/EventArgs/CancelableEventArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Core/Event/EventArgs/CancelableEventArgs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Event/EventArgs/Item/ItemSwingEventArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Core/Event/EventArgs/Item/ItemSwingEventArgs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Event/EventArgs/Item/ItemUseEventArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Core/Event/EventArgs/Item/ItemUseEventArgs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Event/EventPriority.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Core/Event/EventPriority.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Event/PriotisedEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Core/Event/PriotisedEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Protocol/ProtocolInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/ServerManager/BedrockServer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/ServerManager/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Networking/ServerManager/Main.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Network/Structure.md" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Networking/Structure.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Server.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Fluid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Fluid.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Command/Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Command/Command.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Math/Cryptography.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Math/Cryptography.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluid/Fluid.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Fluid.csproj.DotSettings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,21 +36,18 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/33/MathF.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/Protocol/ProtocolInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/ServerManager/Main.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/103/Vector3_Intrinsics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/PacketReceiver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/102/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/PacketReceiver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/406/ConcurrentQueue.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/ServerManager/Main.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/Network.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/61F5185B-E9CF-48B9-8487-181D7861EB9C/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/Protocol/ProtocolInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/StatusPing.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginDisconnectPacket.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/EncryptionKeyRequestPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginSuccessPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginStartPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/EncryptionKeyResponsePacket.cs" />
@@ -108,10 +93,16 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Network/PacketReceiver.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Core/Event/EventArgs/Networking/PacketReceiver/PrePacketReceivedEvent.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Core/Event/EventArgs/Networking/PacketReceiver/PrePacketReceivedEventArgs.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Server.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Networking/PacketReceiver.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Networking/PacketSender.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Server.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Command/Command.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Permission/PermissionType.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Permission/Permission.cs" />
     </changedPaths>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="ka5wybnf" />
   </component>
   <component name="ProjectId" id="1sLSi5Lyd7DfoSL1YFfAyXpNCY5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -128,8 +119,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -175,7 +170,11 @@
       <workItem from="1622549530233" duration="2148000" />
       <workItem from="1622620874225" duration="4722000" />
       <workItem from="1622659359143" duration="2480000" />
-      <workItem from="1622744096479" duration="1520000" />
+      <workItem from="1622744096479" duration="2244000" />
+      <workItem from="1623995115884" duration="1366000" />
+      <workItem from="1625589595967" duration="51000" />
+      <workItem from="1625597311686" duration="29000" />
+      <workItem from="1625597362936" duration="808000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -492,12 +491,27 @@
       <option name="project" value="LOCAL" />
       <updated>1622718673659</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Added a good networking structure. Before anybody changes it ASK ME FIRST!">
+      <created>1622745738138</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1622745738138</updated>
+    </task>
+    <task id="LOCAL-00047" summary="fixed typo">
+      <created>1622745829193</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1622745829193</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
@@ -514,8 +528,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fixed packet and Raknet stuff" />
-    <MESSAGE value="changed a few things" />
     <MESSAGE value="updated the entity" />
     <MESSAGE value="added LevelGenerator and updated so much more stuff" />
     <MESSAGE value="Updated the Block class (will now use Local position instead of global position" />
@@ -539,7 +551,9 @@
     <MESSAGE value="Extended the Inventory class" />
     <MESSAGE value="Extended the PlayerInventory class" />
     <MESSAGE value="updated ItemSlot.cs and Inventory.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated ItemSlot.cs and Inventory.cs" />
+    <MESSAGE value="Added a good networking structure. Before anybody changes it ASK ME FIRST!" />
+    <MESSAGE value="fixed typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed typo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
