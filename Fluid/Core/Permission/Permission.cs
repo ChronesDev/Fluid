@@ -8,7 +8,7 @@ namespace Fluid.Core
         /// <summary>
         /// Stores the permission identifier
         /// </summary>
-        public string Id;
+        public string Id { get; private set; }
 
         /// <summary>
         /// Constructor
