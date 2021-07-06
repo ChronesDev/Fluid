@@ -9,7 +9,7 @@ namespace Fluid.Core
     /// <summary>
     /// This is the core instance of this server, the server itself 
     /// </summary>
-    public static class Server
+    public static partial class Server
     {
         // Instance
         

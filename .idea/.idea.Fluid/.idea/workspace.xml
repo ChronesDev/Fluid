@@ -7,9 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Permission.Id is now readonly for outside access">
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Updated Permission.cs">
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Command/Commands.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FluidLab/FluidLab.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FluidLab/UnitTest1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Permission/Permission.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Permission/Permission.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Server.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +47,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginStartPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/EncryptionKeyResponsePacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/KeepAlivePacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/UseBedPacket.cs" />
@@ -89,11 +92,12 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Core/Event/EventArgs/Networking/PacketReceiver/PrePacketReceivedEventArgs.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Networking/PacketReceiver.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Networking/PacketSender.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Server.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Command/Command.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Permission/PermissionType.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Permission/Permissions.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Permission/Permission.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Server.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Command/Commands.cs" />
     </changedPaths>
   </component>
   <component name="MacroExpansionManager">
@@ -108,6 +112,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
@@ -169,14 +174,7 @@
       <workItem from="1623995115884" duration="1366000" />
       <workItem from="1625589595967" duration="51000" />
       <workItem from="1625597311686" duration="29000" />
-      <workItem from="1625597362936" duration="1965000" />
-    </task>
-    <task id="LOCAL-00001" summary="first init">
-      <created>1622275259994</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1622275259994</updated>
+      <workItem from="1625597362936" duration="2947000" />
     </task>
     <task id="LOCAL-00002" summary="removed .idea">
       <created>1622275756469</created>
@@ -514,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625600404420</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Updated Permission.cs">
+      <created>1625601233617</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1625601233617</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,8 +541,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Updated the Block class (will now use Local position instead of global position" />
     <MESSAGE value="Updated the Block class" />
     <MESSAGE value="Added UngeneratedChunk.cs" />
     <MESSAGE value="polished SocketBinder.cs" />
@@ -562,7 +567,8 @@
     <MESSAGE value="fixed typo" />
     <MESSAGE value="added Permission.cs" />
     <MESSAGE value="Permission.Id is now readonly for outside access" />
-    <option name="LAST_COMMIT_MESSAGE" value="Permission.Id is now readonly for outside access" />
+    <MESSAGE value="Updated Permission.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Permission.cs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
