@@ -1,7 +1,7 @@
 namespace Fluid.Core
 {
     /// <summary>
-    /// Is being used to determine the permissions
+    /// Represents a permission
     /// </summary>
     public struct Permission
     {
@@ -17,5 +17,25 @@ namespace Fluid.Core
         {
             Id = id;
         }
+
+        /// <summary>
+        /// Represents the * (star) permission
+        /// </summary>
+        public static Permission All => new Permission("*");
+        
+        /// <summary>
+        /// Represents no permissions
+        /// </summary>
+        public static Permission None => new Permission("");
+        
+        /// <summary>
+        /// Represents console permissions
+        /// </summary>
+        public static Permission Console => new Permission("console");
+        
+        /// <summary>
+        /// Represents operator permissions
+        /// </summary>
+        public static Permission Operator => new Permission("operator");
     }
 }

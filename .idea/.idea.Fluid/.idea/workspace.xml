@@ -7,16 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Permission/Permission.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/shelf/Uncommitted_changes_before_Update_at_01_06_2021_14_03_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/shelf/Uncommitted_changes_before_Update_at_01_06_2021_14_03__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/shelf/Uncommitted_changes_before_Update_at_01_06_2021_15_40_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/shelf/Uncommitted_changes_before_Update_at_01_06_2021_15_40__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Permission.Id is now readonly for outside access">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Command/Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Command/Command.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Math/Cryptography.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Math/Cryptography.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Fluid.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Fluid.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Permission/Permission.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Permission/Permission.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +36,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/406/ConcurrentQueue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/ServerManager/Main.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/Network.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Command/Command.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Permission/Permission.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/61F5185B-E9CF-48B9-8487-181D7861EB9C/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/Protocol/ProtocolInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginSuccessPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/LoginStartPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/EncryptionKeyResponsePacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/KeepAlivePacket.cs" />
@@ -98,6 +92,7 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Server.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Command/Command.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Permission/PermissionType.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Permission/Permissions.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Permission/Permission.cs" />
     </changedPaths>
   </component>
@@ -174,7 +169,7 @@
       <workItem from="1623995115884" duration="1366000" />
       <workItem from="1625589595967" duration="51000" />
       <workItem from="1625597311686" duration="29000" />
-      <workItem from="1625597362936" duration="808000" />
+      <workItem from="1625597362936" duration="1965000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1622275259994</created>
@@ -505,7 +500,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622745829193</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="added Permission.cs">
+      <created>1625600301923</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1625600301923</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Permission.Id is now readonly for outside access">
+      <created>1625600404420</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1625600404420</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,8 +537,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="updated the entity" />
-    <MESSAGE value="added LevelGenerator and updated so much more stuff" />
     <MESSAGE value="Updated the Block class (will now use Local position instead of global position" />
     <MESSAGE value="Updated the Block class" />
     <MESSAGE value="Added UngeneratedChunk.cs" />
@@ -553,7 +560,9 @@
     <MESSAGE value="updated ItemSlot.cs and Inventory.cs" />
     <MESSAGE value="Added a good networking structure. Before anybody changes it ASK ME FIRST!" />
     <MESSAGE value="fixed typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed typo" />
+    <MESSAGE value="added Permission.cs" />
+    <MESSAGE value="Permission.Id is now readonly for outside access" />
+    <option name="LAST_COMMIT_MESSAGE" value="Permission.Id is now readonly for outside access" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
