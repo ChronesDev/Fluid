@@ -21,7 +21,7 @@ namespace Fluid.Core
         /// <summary>
         /// This variable is being used to determine if the server is ready to use
         /// </summary>
-        public static Network Network { get; set; }
+        public static Network Network { get; } = new();
 
         // Players
 
