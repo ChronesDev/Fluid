@@ -51,7 +51,7 @@ namespace Fluid.Core
 
         /// <summary>
         /// Determines the item count
-        /// </summary>
+        /// </summary>{ get; } =
         public int Count
         {
             get => _Count;

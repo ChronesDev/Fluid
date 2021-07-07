@@ -4,12 +4,13 @@ using Xunit;
 
 namespace FluidLab
 {
-    public class UnitTest1
+    public class TestTemplate
     {
         [Fact]
-        public void Test1()
+        public void ExampleItem()
         {
-            Item item = new Items.TestItem();
+            Item item = new Items.TestItem {DisplayName = "LUL"};
+            var item2 = item with {DisplayName = "Hello World", Count = 10};
         }
     }
 }
