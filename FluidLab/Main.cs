@@ -1,6 +1,6 @@
 using System;
-using Xunit;
 using Fluid.Core;
+using Xunit;
 
 namespace FluidLab
 {
@@ -9,7 +9,7 @@ namespace FluidLab
         [Fact]
         public void Test1()
         {
-            
+            Item item = new Items.TestItem();
         }
     }
 }
