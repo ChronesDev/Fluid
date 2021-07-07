@@ -11,6 +11,7 @@ namespace FluidLab
         {
             Item item = new Items.TestItem {DisplayName = "LUL"};
             var item2 = item with {DisplayName = "Hello World", Count = 10};
+            Level level = new();
         }
     }
 }
