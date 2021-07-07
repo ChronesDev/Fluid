@@ -7,13 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="Updated Permission.cs">
-      <change afterPath="$PROJECT_DIR$/Fluid/Core/Command/Commands.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FluidLab/FluidLab.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FluidLab/UnitTest1.cs" afterDir="false" />
+    <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="removed FluidLab">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluid.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluid/Core/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Core/Server.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FluidLab/FluidLab.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FluidLab/UnitTest1.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,18 +31,11 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/33/MathF.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/103/Vector3_Intrinsics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/PacketReceiver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/102/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E6E6B40B-308C-4FE1-9C93-7C26C144C865/406/ConcurrentQueue.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/ServerManager/Main.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/PacketReceiver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/Network.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Command/Command.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lukax/source/git/Fluid/Fluid/Fluid/Core/Permission/Permission.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/61F5185B-E9CF-48B9-8487-181D7861EB9C/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/Protocol/ProtocolInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Fluid/Core/Networking/ServerManager/Main.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -124,7 +116,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -175,6 +167,7 @@
       <workItem from="1625589595967" duration="51000" />
       <workItem from="1625597311686" duration="29000" />
       <workItem from="1625597362936" duration="2947000" />
+      <workItem from="1625673774739" duration="143000" />
     </task>
     <task id="LOCAL-00002" summary="removed .idea">
       <created>1622275756469</created>
@@ -543,7 +536,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Updated the Block class" />
     <MESSAGE value="Added UngeneratedChunk.cs" />
     <MESSAGE value="polished SocketBinder.cs" />
     <MESSAGE value="Polished even more SocketBinder.cs" />
@@ -568,7 +560,8 @@
     <MESSAGE value="added Permission.cs" />
     <MESSAGE value="Permission.Id is now readonly for outside access" />
     <MESSAGE value="Updated Permission.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Permission.cs" />
+    <MESSAGE value="removed FluidLab" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed FluidLab" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
