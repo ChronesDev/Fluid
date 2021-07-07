@@ -1,8 +1,6 @@
-using Fluid.Core.Logger;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Net;
 
 namespace Fluid.Core
 {
@@ -88,12 +86,6 @@ namespace Fluid.Core
         public static void Start()
         {
             if (Initialized) return;
-            int port = 11111;
-            string ip = "0.0.0.0";
-            ServerLogger.Info($"Server starts opening Port {port.ToString()} on {ip}.");
-            //Main server = new Main();
-            //server.Start(new IPEndPoint(IPAddress.Parse(ip), port));
-            ServerLogger.Info("Server started successfully!");
             Initialized = true;
         }
         

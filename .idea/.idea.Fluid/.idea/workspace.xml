@@ -8,11 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c1be71b-d83c-45d1-9825-861bfb714e67" name="Default Changelist" comment="removed FluidLab">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluid/Core/Console/Log.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FluidLab/FluidLab.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FluidLab/Main.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluid/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluid.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FluidLab/FluidLab.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FluidLab/UnitTest1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Console/ConsoleCommands.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Console/LoggerManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Console/PluginLogger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Core/Console/ServerLogger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluid/Fluid.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Fluid/Fluid.csproj.DotSettings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +44,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/EncryptionKeyResponsePacket.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/KeepAlivePacket.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/UseBedPacket.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/JoinGamePacket.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/TimeUpdatePacket.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/SpawnPositionPacket.cs" />
-      <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/UpdateHealthPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerPositionPacket.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Network/Packet/Packets/InGame/PlayerLookPacket.cs" />
@@ -90,6 +88,13 @@
       <option value="$PROJECT_DIR$/Fluid/Core/Permission/Permission.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Server.cs" />
       <option value="$PROJECT_DIR$/Fluid/Core/Command/Commands.cs" />
+      <option value="$PROJECT_DIR$/FluidLab/UnitTest1.cs" />
+      <option value="$PROJECT_DIR$/FluidLab/FluidLab.csproj" />
+      <option value="$PROJECT_DIR$/FluidLab/Main.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Console/Console.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Console/FluidConsole.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Console/Cout.cs" />
+      <option value="$PROJECT_DIR$/Fluid/Core/Console/Log.cs" />
     </changedPaths>
   </component>
   <component name="MacroExpansionManager">
@@ -116,8 +121,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="showLigatures" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="FluidCore" type="DotNetProject" factoryName=".NET Project">
@@ -167,14 +175,7 @@
       <workItem from="1625589595967" duration="51000" />
       <workItem from="1625597311686" duration="29000" />
       <workItem from="1625597362936" duration="2947000" />
-      <workItem from="1625673774739" duration="143000" />
-    </task>
-    <task id="LOCAL-00002" summary="removed .idea">
-      <created>1622275756469</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1622275756469</updated>
+      <workItem from="1625673774739" duration="873000" />
     </task>
     <task id="LOCAL-00003" summary="fixed Item.cs">
       <created>1622294123394</created>
@@ -512,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625601233617</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="removed FluidLab">
+      <created>1625673931505</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1625673931505</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
