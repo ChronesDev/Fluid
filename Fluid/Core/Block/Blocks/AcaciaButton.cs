@@ -22,7 +22,7 @@ namespace Fluid.Core
 
         public override float BlastResistance { get; } = 0.5f;
 
-        public override int BlockID { get; } = BlockId.AcaciaButton;
+        public override int Id { get; } = Core.BlockId.AcaciaButton;
 
         /// <summary>
         /// Constructor of the AcaciaButton block (locally)

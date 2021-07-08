@@ -53,37 +53,37 @@ namespace Fluid.Core
         #region OverrideablePorperties
 
         public abstract string Name { get; }
-        
+
+        /// <summary>
+        /// Determines the ID of the block
+        /// </summary>
+        public abstract int Id { get; }
+
         /// <summary>
         /// Determines if the block is solid
         /// </summary>
         public abstract bool IsSolid { get; }
-        
+
         /// <summary>
         /// Determines if the block is transparent. Entities can see through the block if true.
         /// </summary>
         public abstract bool IsTransparent { get; }
-        
+
         /// <summary>
         /// Determines if the block is flammable.
         /// </summary>
         
         public abstract bool IsFlammable { get; }
-        
+
         /// <summary>
         /// Determines the hardness of the block
         /// </summary>
         public abstract float Hardness { get; }
-        
+
         /// <summary>
         /// Determines the blast resistance of the block
         /// </summary>
         public abstract float BlastResistance { get; }
-        
-        /// <summary>
-        /// Determines the ID of the block
-        /// </summary>
-        public abstract int BlockID { get; }
 
         #endregion
         

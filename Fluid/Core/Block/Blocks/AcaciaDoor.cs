@@ -9,7 +9,7 @@ namespace Fluid.Core
         public override Block Copy() => new AcaciaDoor(Chunk, LocalX, LocalY, LocalZ);
         public override Block CopyTo(Level level, long x, long y, long z) => new AcaciaDoor(level, x, y, z);
         public override Block CopyToLocal(Chunk chunk, ushort localX, ushort localY, ushort localZ) => new AcaciaDoor(chunk, localX, localY, localZ);
-
+        
         public override string Name { get; } = "AcaciaDoor";
         
         public override bool IsSolid { get; } = false;
@@ -22,7 +22,7 @@ namespace Fluid.Core
 
         public override float BlastResistance { get; } = 3f;
 
-        public override int BlockID { get; } = BlockId.AcaciaDoorBlock;
+        public override int Id { get; } = BlockId.AcaciaDoorBlock;
 
         /// <summary>
         /// Constructor of the AcaciaDoor block (locally)
