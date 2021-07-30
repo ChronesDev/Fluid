@@ -33,16 +33,16 @@ namespace Fluid.Core
         /// Stores the name of the item
         /// </summary>
         public abstract string Name { get; }
-        
+
         /// <summary>
-        /// Determines the maximum count that item can have
+        /// Determines the maximum count that this item can have
         /// </summary>
-        public abstract int MaxCount { get; }
-        
+        public virtual int MaxCount => Count64;
+
         /// <summary>
         /// Determines the maximum durability
         /// </summary>
-        public abstract int MaxDurability { get; }
+        public virtual int MaxDurability => NoDurability;
 
         /// <summary>
         /// Determines whether the item updated it's properties that can be seen by the client
@@ -51,7 +51,7 @@ namespace Fluid.Core
 
         /// <summary>
         /// Determines the item count
-        /// </summary>
+        /// </summary>{ get; } =
         public int Count
         {
             get => _Count;
@@ -67,6 +67,9 @@ namespace Fluid.Core
             set { Update(); _Durability = value; }
         }
 
+        /// <summary>
+        /// Determines the display name
+        /// </summary>
         public string? DisplayName
         {
             get => _DisplayName;
@@ -120,5 +123,25 @@ namespace Fluid.Core
         {
             return HashCode.Combine(_Count, _Durability, _DisplayName, _IsBroken, (int) Type, Name, MaxCount, MaxDurability);
         }
+
+        /// <summary>
+        /// The default stack size of 64
+        /// </summary>
+        public const int Count64 = 64;
+        
+        /// <summary>
+        /// The stack size of 16
+        /// </summary>
+        public const int Count16 = 64;
+        
+        /// <summary>
+        /// The stack size of a single item
+        /// </summary>
+        public const int CountSingle = 64;
+
+        /// <summary>
+        /// Represents no durability
+        /// </summary>
+        public const int NoDurability = 0;
     }
 }

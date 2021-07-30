@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Numerics;
-using System.Threading.Tasks;
 
 namespace Fluid.Core
 {
@@ -78,6 +76,11 @@ namespace Fluid.Core
             // TODO: Finish this
             return new UngeneratedChunk(this, (long)position.X, (long)position.Y);
         }
-        
+
+        /// <summary>
+        /// Summons an entity in this level
+        /// </summary>
+        public void Summon(Entity entity, Vector3 position) => throw new NotImplementedException();
+
     }
 }

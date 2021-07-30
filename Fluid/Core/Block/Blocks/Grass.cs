@@ -22,7 +22,7 @@ namespace Fluid.Core
 
         public override float BlastResistance { get; } = 0.6f;
 
-        public override int BlockID { get; } = BlockId.GrassBlock;
+        public override int Id { get; } = Core.BlockId.GrassBlock;
 
         /// <summary>
         /// Constructor of the Grass block (locally)

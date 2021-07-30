@@ -43,6 +43,11 @@ namespace Fluid.Core
         public abstract void SetSlot(ItemSlot slot, int index);
 
         /// <summary>
+        /// Clears all slots
+        /// </summary>
+        public abstract void Clear();
+
+        /// <summary>
         /// Sets the item at the index. Can throw an OutOfRangeException if an invalid index is specified.
         /// </summary>
         /// <param name="item">The Item</param>

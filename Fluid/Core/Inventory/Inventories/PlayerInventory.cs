@@ -1,3 +1,5 @@
+using System;
+
 namespace Fluid.Core
 {
     public record PlayerInventory : Inventory
@@ -10,6 +12,7 @@ namespace Fluid.Core
         public override ItemSlot[] AllSlots => Slots;
         public override ref ItemSlot GetSlot(int index) => ref Slots[index];
         public override void SetSlot(ItemSlot slot, int index) => Slots[index] = slot;
+        public override void Clear() => Array.Clear(Slots, 0, Slots.Length);
 
         /// <summary>
         /// Stores all ItemSlots
