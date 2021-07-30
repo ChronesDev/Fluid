@@ -19,7 +19,7 @@ namespace Fluid.Core
 
             public override float BlastResistance { get; } = 6f;
 
-            public override int BlockID { get; } = BlockId.EmeraldBlock;
+            public override int Id { get; } = BlockId.EmeraldBlock;
 
             /// <summary>
             /// Constructor of the EmeraldBlock block (locally)

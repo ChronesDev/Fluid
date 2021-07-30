@@ -19,7 +19,7 @@ namespace Fluid.Core
 
             public override float BlastResistance { get; } = 6f;
 
-            public override int BlockID { get; } = BlockId.IronBlock;
+            public override int Id { get; } = BlockId.IronBlock;
 
             /// <summary>
             /// Constructor of the IronBlock block (locally)
